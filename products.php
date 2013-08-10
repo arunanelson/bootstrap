@@ -13,7 +13,7 @@
         <div id="productsWrapper">
           <div class="fleft product pink"><a href="img/catalog/tre_sensi_big.png" rel="prettyPhoto">
             <div class="prod_description"><span class="lightbox_header">Tre Sensi</span>
-              <div style="margin-top:5px">
+              <div class="m5t">
                 <button type="button" class="btn btn-default btn-xs" id="specs" style="font-size:10px">View Specifications &raquo;</button>
               </div>
               <div class="prod_details">

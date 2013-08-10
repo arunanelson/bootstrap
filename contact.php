@@ -11,62 +11,49 @@
       <div class="span12">
         <div class="span3" id="whatsNew" title="Contact Us">CONTACT US</div>
         <div id="productsWrapper">
-          <div id="newsImg"></div>
-          <div id="newsArticle">
-            <div class="article_title">News Article Title</div>
-            <div class="article_date">Article Date</div>
-            <div class="article_body"> 
-            Quod ii legunt saepius claritas est etiam processus 
-            dynamicus qui sequitur mutationem. Doming id quod mazim placerat facer 
-            possim assum typi non habent claritatem insitam. Nihil imperdiet est usus 
-            legentis in iis qui facit eorum claritatem Investigationes demonstraverunt. 
-            Dolor in hendrerit in vulputate velit esse molestie consequat vel illum 
-            dolore eu feugiat nulla? Vel eum iriure facilisis at vero eros et accumsan et. 
-            Lius consuetudium lectorum mirum est notare quam littera gothica, quam nunc putamus. 
-            Congue lectores legere me parum claram anteposuerit litterarum formas humanitatis 
-            per seacula quarta decima? Zzril delenit augue duis dolore te: 
-            feugait nulla facilisi nam liber tempor? </div>
+          <div class="article_left">
+            <div>Feel free to get in touch if you have<br>
+              any questions about our products!</div>
+            <div class="m5t">BORMIOLI ROCCO USA<br>
+              41 Madison Ave<br>
+              17th Floor<br>
+              New York<br>
+              NY, 10010</div>
+            <div class="m5t">Tel: (1) 212 719 0606<br>
+              Email: <a class="red" href="maito:info@bormioliroccousa.com">info@bormioliroccousa.com</a></div>
+            <div class="m5t">Like us on <a class="red" href="#">Facebook</a><br>
+              Follow us on <a class="red" href="#">Twitter</a></div>
+          </div>
+          <div class="article_container">
+            <form>
+              <fieldset>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="inputName" placeholder="Name">
+                  <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="form-group m5t" id="contactSubject">
+                  <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                </div>
+                <div class="form-group m5t">
+                  <textarea class="form-control" rows="3" placeholder="Enquiry"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </fieldset>
+            </form>
           </div>
         </div>
         <div class="clearfix"></div>
-        <div class="grey_line"></div>
+        <div class="grey_line m5t"></div>
         <?php require_once("inc/favourites.php"); ?>
         <!--/row--> 
       </div>
       <!--/span--> 
     </div>
-    <!--/row--> 
-    
+    <!--/row-->     
   </div>
   <?php require_once("inc/footer.php"); ?>
   <!--/.fluid-container--> 
 </div>
 <?php require_once("inc/js.php"); ?>
-<script>
-
-        !function ($) {
-            $(function () {
-                $('#myCarousel').carousel();
-                $('#flip').carouFredSel({
-                    auto: false,
-                    width: 960,
-                    height: 250,
-                    items: {
-                        visible: 3,
-                        minimum: 3,
-                        width: "variable",
-                        height: "variable"
-                    },
-                    prev: '#prev2',
-                    next: '#next2',
-                    mousewheel: true,
-                    swipe: {
-                        onMouse: true,
-                        onTouch: true
-                    }
-                });
-            })
-        }(window.jQuery)
-    </script>
 </body>
 </html>

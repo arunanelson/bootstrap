@@ -41,30 +41,5 @@
   <!--/.fluid-container--> 
 </div>
 <?php require_once("inc/js.php"); ?>
-<script>
-        !function ($) {
-            $(function () {
-                $('#myCarousel').carousel();
-                $('#flip').carouFredSel({
-                    auto: false,
-                    width: 960,
-                    height: 250,
-                    items: {
-                        visible: 3,
-                        minimum: 3,
-                        width: "variable",
-                        height: "variable"
-                    },
-                    prev: '#prev2',
-                    next: '#next2',
-                    mousewheel: true,
-                    swipe: {
-                        onMouse: true,
-                        onTouch: true
-                    }
-                });
-            })
-        }(window.jQuery)
-    </script>
 </body>
 </html>
