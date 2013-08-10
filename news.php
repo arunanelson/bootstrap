@@ -8,27 +8,28 @@
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="span12"> 
-        <!-- Carousel
-    ================================================== -->
-        <div id="myCarousel" class="carousel slide boxshadow">
-          <div class="carousel-inner">
-            <div class="item active"> <img src="./Carousel_files/slide-01.jpg" alt="" usemap="#01map"> </div>
-            <!--<div class="item"> <img src="./Carousel_files/slide-02.jpg" alt=""> </div>-->
-            <div class="item"> <img src="./Carousel_files/slide-03.jpg" alt="" usemap="#03map"> </div>
-            <div class="item"> <img src="./Carousel_files/slide-04.jpg" alt="" usemap="#04map"> </div>
+      <div class="span12">
+        <div class="span3" id="whatsNew" title="In the news?">IN THE NEWS</div>
+        <div id="productsWrapper">
+          <div id="newsImg"></div>
+          <div id="newsArticle">
+            <div class="article_title">News Article Title</div>
+            <div class="article_date">Article Date</div>
+            <div class="article_body"> 
+            Quod ii legunt saepius claritas est etiam processus 
+            dynamicus qui sequitur mutationem. Doming id quod mazim placerat facer 
+            possim assum typi non habent claritatem insitam. Nihil imperdiet est usus 
+            legentis in iis qui facit eorum claritatem Investigationes demonstraverunt. 
+            Dolor in hendrerit in vulputate velit esse molestie consequat vel illum 
+            dolore eu feugiat nulla? Vel eum iriure facilisis at vero eros et accumsan et. 
+            Lius consuetudium lectorum mirum est notare quam littera gothica, quam nunc putamus. 
+            Congue lectores legere me parum claram anteposuerit litterarum formas humanitatis 
+            per seacula quarta decima? Zzril delenit augue duis dolore te: 
+            feugait nulla facilisi nam liber tempor? </div>
           </div>
         </div>
-        <map name="01map">
-          <area shape="circle" coords="140,140,100" href="#" alt="Find Out More" title="Find out more">
-        </map>
-        <map name="03map">
-          <area shape="rect" coords="400,100,500,300" href="#" alt="Where to buy" title="Where to buy">
-        </map>
-        <map name="04map">
-          <area shape="rect" coords="400,100,500,300" href="#" alt="Read our story" title="Read our story">
-        </map>
-        <!-- /.carousel -->
+        <div class="clearfix"></div>
+        <div class="grey_line"></div>
         <?php require_once("inc/favourites.php"); ?>
         <!--/row--> 
       </div>
@@ -42,6 +43,7 @@
 </div>
 <?php require_once("inc/js.php"); ?>
 <script>
+
         !function ($) {
             $(function () {
                 $('#myCarousel').carousel();

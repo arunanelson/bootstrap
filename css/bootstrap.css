@@ -615,7 +615,6 @@ a:focus {
 .container {
   margin-right: auto;
   margin-left: auto;
-  *zoom: 1;
 }
 
 .container:before,
@@ -632,7 +631,6 @@ a:focus {
 .container-fluid {
   padding-right: 20px;
   padding-left: 20px;
-  *zoom: 1;
 }
 
 .container-fluid:before,
@@ -6060,11 +6058,10 @@ a.badge:focus {
 
 .carousel-control {
   position: absolute;
-  top: 780px;
-  left: 250px;
+  top: -230px;
+  left: 0px;
   width: 40px;
   height: 40px;
-  margin-top: -20px;
   font-size: 90px;
   font-weight:lighter;
   line-height: 40px;
@@ -6074,7 +6071,7 @@ a.badge:focus {
 }
 
 .carousel-control.right {
-  right: 250px;
+  right: 0px;
   left: auto;
 }
 

@@ -13,9 +13,9 @@
         <div id="productsWrapper">
           <div class="fleft product pink"><a href="img/catalog/tre_sensi_big.png" rel="prettyPhoto">
             <div class="prod_description"><span class="lightbox_header">Tre Sensi</span>
-            <div style="margin-top:5px">
-            <button type="button" class="btn btn-default btn-xs" id="specs" style="font-size:10px">View Specifications &raquo;</button>
-            </div>
+              <div style="margin-top:5px">
+                <button type="button" class="btn btn-default btn-xs" id="specs" style="font-size:10px">View Specifications &raquo;</button>
+              </div>
               <div class="prod_details">
                 <ul class="prod_highlights summary">
                   <li> All-purpose wine tasting glass</li>
