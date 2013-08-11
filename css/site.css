@@ -3,11 +3,26 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
  filter: progid:DXImageTransform.Microsoft. AlphaImageLoader(src=hIEfix.png, sizingMethod=crop);
 }
+#map-usa li a {
+	margin: -9999em 0 0 0;
+	position: absolute;
+}
+#carouselControls {
+	position: relative;
+	margin-left: 40px;
+}
+#contactSubject input {
+	width: 567px;
+}
 #productsWrapper {
 	padding-left: 10px;
 	padding-top: 30px;
 	clear: both;
 	padding-bottom: 50px;
+}
+#salesWrapper {
+	padding-left: 10px;
+	clear: both;
 }
 #topNav {
 	float: left;
@@ -89,11 +104,17 @@ body {
 }
 #searchFrm input {
 	padding-left: 15px;
+	font-style: italic;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	width: 150px;
+	font-weight: bold;
 }
 #signupFrm input {
 	width: 195px;
+	font-style: italic;
 	padding-left: 15px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
 }
 #twitter {
 	background-image: url(../img/twitter.png);
@@ -174,7 +195,9 @@ body {
 }
 .favourites {
 	margin-top: 45px;
-	margin: 45px;
+	margin-bottom: 45px;
+	margin-left: 35px;
+	margin-right: 45px;
 }
 .footer-bottom {
 	background-image: url(../img/footer_bottom.png);
@@ -230,8 +253,7 @@ body {
 	bottom: 70px;
 	left: 70px;
 }
-.wide
-{
+.wide {
 	left: 30px !important;
 }
 .product div {
@@ -325,6 +347,18 @@ li.center img {
 .grey {
 	background-color: #b4afa7;
 }
+.red {
+	color: #cc0000;
+}
+.grey_line {
+	background-image: url(../img/grey_line.png);
+	background-repeat: no-repeat;
+	width: 960px;
+	height: 1px;
+}
+.m100t {
+	margin-top: 100px;
+}
 .darkgrey {
 	background-color: #928c83;
 }
@@ -350,13 +384,76 @@ li.center img {
 	background-image: url(../img/pInterestWhite.png);
 	background-repeat: no-repeat;
 	float: left;
-	margin-top:3px;
+	margin-top: 3px;
 	margin-left: 20px;
 	width: 12px;
 	height: 16px;
 	cursor: pointer;
 }
-.specs
-{
-	display:none;
+.m5t {
+	margin-top: 5px;
+}
+.m40b {
+	margin-bottom: 40px;
+}
+.m20t {
+	margin-top: 15px;
+}
+.specs {
+	display: none;
+}
+.map-loader {
+	display: none;
+}
+.article_left {
+	width: 299px;
+	height: 256px;
+	float: left;
+}
+.sales_left {
+	width: 199px;
+	height: 256px;
+	float: left;
+}
+.article_title {
+	border-bottom: 1px solid #666;
+	width: 182px;
+	;
+}
+.article_date {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-top: 10px;
+}
+.article_container {
+	float: left;
+	margin-left: 30px;
+}
+.form-group input {
+	width: 265px;
+	margin-right: 10px;
+	font-style: italic;
+	padding-left: 15px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
+}
+.m-70t {
+	margin-top: -70px;
+}
+.form-group textarea {
+	width: 570px;
+	height: 240px;
+	font-style: italic;
+	padding-left: 15px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
+}
+.article_body {
+	letter-spacing: 1px;
+	margin-top: 15px;
+	width: 600px;
+}
+.stores {
+	float: left;
+	margin-right: 60px;
 }
