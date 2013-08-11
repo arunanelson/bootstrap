@@ -13,13 +13,13 @@
         <div id="salesWrapper" class="m5t">
           <div class="sales_left">
             <div class="m40b" id="sales">SALES NETWORK</div>
-            <span id="newYork">New York</span>
-            <div class="m20t"> Bormioli Rocco Showroom<br>
+            <span id="city">New York</span>
+            <div id="address" class="m20t"> Bormioli Rocco Showroom<br>
               41 Madison Ave<br>
               17th Floor<br>
               New York<br>
               NY, 10010</div>
-            <div class="m5t">Tel: (1) 212 719 0606<br>
+            <div class="m5t"><span id="tel">Tel: (1) 212 719 0606</span><br>
               Email: <a class="red" href="maito:info@bormioliroccousa.com">info@bormioliroccousa.com</a></div>
           </div>
           <div class="article_container">
@@ -100,8 +100,15 @@
 $(function($){
   // invoke function with specified size and floating tooltips;
   $('#map-usa').cssMap({
-    'size' : 660, 				// set map size;
-    'tooltips' : 'floating' 	// floating tooltips;
+    'size' : 660,		
+    'tooltips' : 'floating',
+	'onClick' : function(e){
+		$("#city").text(e.text()); 
+		 $("#address").html("Bormioli Rocco Showroom<br>XX Lorem ipsum Ave<br>XXth Floor<br>" + e.text() + "<br>xx, xxxxx");
+		 $("#tel").text("Tel: (x) xxx xxx xxxx");
+		 Cufon.replace('.sales_left', { fontFamily: 'GillSans-Cufon', fontSize: '14px' });
+		 Cufon.replace('#city', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
+	 }
    });
 });
 </script>
