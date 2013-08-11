@@ -406,19 +406,35 @@ li.center img {
 	display: none;
 }
 .article_left {
-	width: 299px;
 	height: 256px;
 	float: left;
 }
-.sales_left {
-	width: 199px;
-	height: 256px;
-	float: left;
-}
+
 .article_title {
 	border-bottom: 1px solid #666;
-	width: 182px;
-	;
+}
+
+.w300
+{
+	width:300px;
+}
+
+.w200
+{
+	width:200px;
+}
+
+.w180
+{
+	width:180px;
+}
+.w160
+{
+	width: 160px;
+}
+.w310
+{
+	width: 310px;
 }
 .article_date {
 	text-transform: uppercase;
@@ -428,6 +444,23 @@ li.center img {
 .article_container {
 	float: left;
 	margin-left: 30px;
+}
+.about_copy {
+	margin-left: 10px;
+}
+.about_right {
+	float: right;
+	margin-top: 35px;
+	width: 220px;
+	height: 220px;
+	background-repeat: no-repeat;
+	background-image: url(../img/about_right.png);
+}
+.about_img {
+	margin-top: 45px;
+	margin-left: 10px;
+	width:960px;
+	margin-bottom: 30px;
 }
 .form-group input {
 	width: 265px;
@@ -440,6 +473,16 @@ li.center img {
 .m-70t {
 	margin-top: -70px;
 }
+.headline {
+	width: 560px;
+	height: 80px;
+	margin-top: -40px;
+	padding-left: 20px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	border-left: 4px solid #666;
+	margin-left: 65px;
+}
 .form-group textarea {
 	width: 570px;
 	height: 240px;
@@ -448,10 +491,15 @@ li.center img {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-weight: bold;
 }
+.w600 {
+	width: 600px;
+}
+.w640 {
+	width: 640px;
+}
 .article_body {
 	letter-spacing: 1px;
 	margin-top: 15px;
-	width: 600px;
 }
 .stores {
 	float: left;

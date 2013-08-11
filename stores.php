@@ -11,7 +11,7 @@
       <div class="span12">
         <div class="span3" id="whatsNew" title="Where to buy">WHERE TO BUY</div>
         <div id="salesWrapper">
-          <div class="sales_left">IN THE STORES</div>
+          <div class="article_left w200">IN THE STORES</div>
           <div class="article_container">
             <div class="stores">
               <ul>

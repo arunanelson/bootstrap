@@ -11,11 +11,11 @@
       <div class="span12">
         <div class="span3" id="whatsNew" title="In the news?">IN THE NEWS</div>
         <div id="productsWrapper">
-          <div class="article_left"><img src="img/news.jpg"/></div>
+          <div class="article_left w300"><img src="img/news.jpg"/></div>
           <div class="article_container">
-            <div class="article_title">News Article Title</div>
+            <div class="article_title w180">News Article Title</div>
             <div class="article_date">Article Date</div>
-            <div class="article_body"> Quod ii legunt saepius claritas est etiam processus 
+            <div class="article_body w600"> Quod ii legunt saepius claritas est etiam processus 
               dynamicus qui sequitur mutationem. Doming id quod mazim placerat facer 
               possim assum typi non habent claritatem insitam. Nihil imperdiet est usus 
               legentis in iis qui facit eorum claritatem Investigationes demonstraverunt. 

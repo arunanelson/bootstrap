@@ -34,12 +34,12 @@
         Cufon.replace('.fav-product-heading', { fontFamily: 'BodoniBook-Cufon' });
 		Cufon.replace('.stores', { fontFamily: 'BodoniBook-Cufon', fontSize: '18px' });
 		Cufon.replace('.article_title', { fontFamily: 'BodoniBook-Cufon', fontSize: '26px' });
+		Cufon.replace('.headline', { fontFamily: 'BodoniBook-Cufon', fontSize: '26px' });
 	    Cufon.replace('.article_date', { fontFamily: 'GillSans-Cufon', fontSize: '14px' });
 		Cufon.replace('.article_body', { fontFamily: 'GillSans-Cufon', fontSize: '14px' });
         Cufon.replace('.article_left', { fontFamily: 'GillSans-Cufon', fontSize: '14px' });
-		Cufon.replace('.sales_left', { fontFamily: 'GillSans-Cufon', fontSize: '14px' });
 		Cufon.replace('.fav-product-detail', { fontFamily: 'GillSans-Cufon' });
-	    Cufon.replace('#newYork', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
+	    Cufon.replace('#city', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
 		Cufon.replace('#sales', { fontFamily: 'GillSans-Cufon', fontSize: '18px', fontWeight: 'bold' });
 
     </script>

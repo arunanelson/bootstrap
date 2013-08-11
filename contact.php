@@ -11,7 +11,7 @@
       <div class="span12">
         <div class="span3" id="whatsNew" title="Contact Us">CONTACT US</div>
         <div id="productsWrapper">
-          <div class="article_left">
+          <div class="article_left w300">
             <div>Feel free to get in touch if you have<br>
               any questions about our products!</div>
             <div class="m5t">BORMIOLI ROCCO USA<br>
