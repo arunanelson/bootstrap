@@ -41,7 +41,7 @@
 <?php require_once("inc/js.php"); ?>
 <script type="text/javascript" language="javascript">
 $(function($){
-	$("#map").load("list-usa.txt", function(){
+	$("#map").load("list-usa.html", function(){
 		 $('#map-usa').cssMap({
 			'size' : 660,		
 			'tooltips' : 'floating',
