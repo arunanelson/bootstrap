@@ -13,11 +13,11 @@
     ================================================== -->
         <div id="myCarousel" class="carousel slide boxshadow">
           <div class="carousel-inner">
-            <div class="item active"> <img src="./Carousel_files/slide-05.jpg" alt=""> </div>
+            <div class="item active"> <img src="img/slides/slide-05.jpg" alt=""> </div>
           </div>
         </div>
         <!-- /.carousel -->
-        <div class="about_copy">
+        <div id="ourhistory" class="about_copy">
           <div class="article_title w310">The History of Bormioli Rocco</div>
           <div class="article_body w640 fleft"> Bormioli Rocco has built a powerhouse brand on the foundation laid down in Italy 
             over 1,300 years ago in Fidenza. With more than 2,500 employees working in 9 plants, 
@@ -35,10 +35,10 @@
           superior glass and plastic products for homes and businesses around the world. </div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
-            <div class="item active"> <img src="./Carousel_files/slide-06.jpg" alt=""> </div>
+            <div class="item active"> <img src="img/slides/slide-06.jpg" alt=""> </div>
           </div>
         </div>
-        <div class="about_copy">
+        <div class="about_copy" id="glasshistory">
           <div class="article_body w640 fleft">
             <p>With stemware, glasses, food storage and preserving jars, 
               and dinnerware gracing tables around the world, quality is the cornerstone in the foundation 
@@ -68,10 +68,10 @@
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
-            <div class="item active"> <img src="./Carousel_files/slide-07.jpg" alt=""> </div>
+            <div class="item active"> <img src="img/slides/slide-07.jpg" alt=""> </div>
           </div>
         </div>
-        <div class="about_copy">
+        <div class="about_copy" id="northamerica">
           <div class="article_title w160">The USA Team</div>
           <div class="article_body w640 fleft">Ea commodo consequat duis autem vel eum 
             iriure dolor in hendrerit in vulputate? Dignissim qui blandit, praesent 
@@ -85,10 +85,10 @@
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
-            <div class="item active"> <img src="./Carousel_files/slide-08.jpg" alt=""> </div>
+            <div class="item active"> <img src="img/slides/slide-08.jpg" alt=""> </div>
           </div>
         </div>
-        <div class="about_copy">
+        <div class="about_copy" id="partners">
           <div class="article_body w640 fleft">
             <p>Ea commodo consequat duis autem vel eum 
               iriure dolor in hendrerit in vulputate? Dignissim qui blandit, praesent 

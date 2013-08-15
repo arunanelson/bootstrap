@@ -15,13 +15,14 @@
 <script src="fluid_files/bootstrap-popover.js"></script>
 <script src="fluid_files/bootstrap-button.js"></script>
 <script src="fluid_files/bootstrap-collapse.js"></script>
-<script src="fluid_files/bootstrap-carousel.js"></script>
 <script src="fluid_files/bootstrap-typeahead.js"></script>
 <!-- include jQuery + carouFredSel plugin -->
 <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 <script src="js/BodoniBook-Cufon_italic_400.font.js" type="text/javascript"></script>
 <script src="js/GillSans-Cufon_500.font.js" type="text/javascript"></script>
 <script src="js/jquery.cssmap.js" type="text/javascript"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
 <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
         Cufon.replace('#favHeader', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
@@ -29,6 +30,7 @@
         Cufon.replace('.footer-text a', { fontFamily: 'GillSans-Cufon' });
         Cufon.replace('.footer-bottom', { fontFamily: 'GillSans-Cufon' });
         Cufon.replace('.navi a', { fontFamily: 'GillSans-Cufon' });
+		Cufon.replace('.nav-header', { fontFamily: 'GillSans-Cufon' });
         Cufon.replace('.footer-header', { fontFamily: 'BodoniBook-Cufon', fontWeight: 'bold' });
         Cufon.replace('.carousel-control', { fontFamily: 'GillSans-Cufon' });
         Cufon.replace('.fav-product-heading', { fontFamily: 'BodoniBook-Cufon' });
@@ -48,10 +50,27 @@
 <script type="text/javascript" src="js/helper-plugins/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="js/helper-plugins/jquery.transit.min.js"></script>
 <script type="text/javascript" src="js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+<script type="text/javascript" src="nivo-slider/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    }); 
+    </script>
 <script>
         !function ($) {
             $(function () {
-                $('#myCarousel').carousel();
+			$(".scrollItem").click(function() {				
+				$.scrollTo($($(this).attr("href")), {
+					duration: 1000,
+					axis:'y',
+					easing: 'easeOutCubic'
+				});
+				window.location.hash = $(this).attr("href");
+				return false;
+			});
+				$(".logo").click(function(){
+					window.location = "index.php";
+					});
                 $('#flip').carouFredSel({
                     auto: false,
                     width: 960,

@@ -11,22 +11,22 @@
       <div class="span12"> 
         <!-- Carousel
     ================================================== -->
-        <div id="myCarousel" class="carousel slide boxshadow">
-          <div class="carousel-inner">
-            <div class="item active"> <img src="./Carousel_files/slide-01.jpg" alt="" usemap="#01map"> </div>
-            <!--<div class="item"> <img src="./Carousel_files/slide-02.jpg" alt=""> </div>-->
-            <div class="item"> <img src="./Carousel_files/slide-03.jpg" alt="" usemap="#03map"> </div>
-            <div class="item"> <img src="./Carousel_files/slide-04.jpg" alt="" usemap="#04map"> </div>
+        <div class="slider-wrapper theme-default">
+          <div id="slider" class="nivoSlider"> 
+              <img src="img/slides/slide-01.jpg" alt="" usemap="#01map"> 
+              <img src="img/slides/slide-03.jpg" alt="" usemap="#03map"> 
+              <img src="img/slides/slide-04.jpg" alt="" usemap="#04map"> 
           </div>
+          <div id="htmlcaption" class="nivo-html-caption"> <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. </div>
         </div>
         <map name="01map">
-          <area shape="circle" coords="140,140,100" href="#" alt="Find Out More" title="Find out more">
+          <area shape="circle" coords="140,140,100" href="about.php" alt="Find Out More" title="Find out more">
         </map>
         <map name="03map">
-          <area shape="rect" coords="400,100,500,300" href="#" alt="Where to buy" title="Where to buy">
+          <area shape="rect" coords="400,100,500,300" href="stores.php" alt="Where to buy" title="Where to buy">
         </map>
         <map name="04map">
-          <area shape="rect" coords="400,100,500,300" href="#" alt="Read our story" title="Read our story">
+          <area shape="rect" coords="400,100,500,300" href="about.php#ourhistory" alt="Read our story" title="Read our story">
         </map>
         <!-- /.carousel -->
         <?php require_once("inc/favourites.php"); ?>

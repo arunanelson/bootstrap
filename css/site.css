@@ -106,7 +106,6 @@ body {
 	padding-left: 15px;
 	font-style: italic;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	width: 150px;
 	font-weight: bold;
 }
 #signupFrm input {
@@ -172,6 +171,7 @@ body {
 	background-image: url(../img/bg.png);
 	border: 1px solid #000;
 }
+
 .lightbox_header {
 	font-size: 30px;
 }
@@ -266,6 +266,7 @@ body {
 	float: left;
 }
 .logo {
+	cursor: pointer;
 	float: left;
 	margin: 25px;
 }
@@ -504,4 +505,7 @@ li.center img {
 .stores {
 	float: left;
 	margin-right: 60px;
+}
+.subItem {
+	margin-left: 10px !important;
 }
