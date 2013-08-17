@@ -2,7 +2,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <title>Dinnerware tableware, Glassware, Food storage - BORMIOLI ROCCO GLASS CO.INC.</title>
-<meta name="viewport" content="width=device-width, initial-scale=0.5">
 <meta name="description" content="">
 <meta name="author" content="Aruna Nelson - arunanelson@hotmail.com">
 
@@ -22,6 +21,6 @@
     <![endif]-->
 
 <!-- Fav and touch icons -->
-<link rel="shortcut icon" href="ico/favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
 <style type="text/css"></style>
 </head>

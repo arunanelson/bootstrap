@@ -22,7 +22,7 @@
 <script src="js/GillSans-Cufon_500.font.js" type="text/javascript"></script>
 <script src="js/jquery.cssmap.js" type="text/javascript"></script>
 <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-<script src="js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
+<script src="js/jquery-scrollto.js" type="text/javascript"></script>
 <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
         Cufon.replace('#favHeader', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
@@ -59,15 +59,17 @@
 <script>
         !function ($) {
             $(function () {
-			$(".scrollItem").click(function() {				
-				$.scrollTo($($(this).attr("href")), {
-					duration: 1000,
-					axis:'y',
-					easing: 'easeOutCubic'
+			$(".scrollItem").click(function(event) {
+				event.preventDefault();	
+				if(window.location.toString().indexOf('about.php') < 0)
+				{
+					window.location = 'about.php' + $(this).attr("href");
+				}
+				$($(this).attr("href")).ScrollTo({
+						duration: 1000,
+						easing: 'easeInQuad'
+					});		
 				});
-				window.location.hash = $(this).attr("href");
-				return false;
-			});
 				$(".logo").click(function(){
 					window.location = "index.php";
 					});

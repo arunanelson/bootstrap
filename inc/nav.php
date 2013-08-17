@@ -1,4 +1,3 @@
-<link href="../css/site.css" rel="stylesheet" type="text/css">
 <div class="masthead">
 <div class="logo">
   <div class="logo-br"></div>
@@ -10,12 +9,12 @@
       <ul class="nav">
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Who we are <b class="caret"></b></a>
           <ul class="dropdown-menu transparent">
-            <li><a class="scrollItem" href="about.php#ourhistory">The History of Bormioli Rocco</a></li>
-            <li><a class="scrollItem" href="about.php#glasshistory">The History of Glass</a></li>
-            <li><a class="scrollItem" href="about.php#italianglass">The History of Italian Glass</a></li>
-            <li><a class="scrollItem" href="about.php#northamerica">Bormioli Rocco North America</a></li>
-            <li><a class="scrollItem" href="about.php#partners">Our Partners</a></li>
-            <li><a class="scrollItem" href="about.php#facts">Facts &amp; Figures</a></li>
+            <li><a class="scrollItem" href="#ourhistory">The History of Bormioli Rocco</a></li>
+            <li><a class="scrollItem" href="#glasshistory">The History of Glass</a></li>
+            <li><a class="scrollItem" href="#italianglass">The History of Italian Glass</a></li>
+            <li><a class="scrollItem" href="#northamerica">Bormioli Rocco North America</a></li>
+            <li><a class="scrollItem" href="#partners">Our Partners</a></li>
+            <li><a class="scrollItem" href="#facts">Facts &amp; Figures</a></li>
           </ul>
         </li>
         <li><a href="products.php">What's new</a></li>
@@ -24,7 +23,8 @@
             <li class="nav-header">Retail</li>
             <li class="subItem"><a href="sales_network.php">Sales Network</a></li>
             <li class="subItem"><a href="stores.php">In the Stores</a></li>
-            <li><a href="#">Restaurants & Hospitality</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Restaurants &amp; Hospitality</a></li>
             <li><a href="#">Canada</a></li>
           </ul>
         </li>
@@ -46,10 +46,7 @@
             <li><a href="#">Stemware/Tumblers</a></li>
             <li><a href="#">Beer</a></li>
             <li><a href="#">Carafes</a></li>
-            <!-- <li class="divider"></li>
-                <li class="nav-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>-->
-            <li><a href="#">Coffee & Tea</a></li>
+            <li><a href="#">Coffee &amp; Tea</a></li>
           </ul>
         </li>
         <li><a href="dinnerware.php">Dinnerware</a></li>

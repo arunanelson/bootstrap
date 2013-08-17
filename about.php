@@ -114,5 +114,18 @@
   <!--/.fluid-container--> 
 </div>
 <?php require_once("inc/js.php"); ?>
+<script type="text/javascript">
+
+$(function(){
+	if(window.location.hash != null)
+	{
+		$(window.location.hash).ScrollTo({
+						duration: 1000,
+						easing: 'easeInQuad'
+	   });		
+	}
+});
+
+</script>
 </body>
 </html>

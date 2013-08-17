@@ -226,15 +226,15 @@
 					
 					if(i == 0)
 					{
-						$(".summary").hide();
-						$(".specs").show();
+						$(".summary").hide('slow');
+						$(".specs").show('slow');
 						$(this).text("View Details >>");
 						i = 1;
 					}
 					else
 					{
-						$(".specs").hide();
-						$(".summary").show();
+						$(".specs").hide('slow');
+						$(".summary").show('slow');
 						$(this).text("View Specifications >>");
 						i = 0;
 					}
