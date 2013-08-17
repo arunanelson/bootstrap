@@ -1,3 +1,8 @@
+<?php
+ $rows = R::$f->begin()->select('*')->from('product_groups')->get();
+ $product_groups = R::convertToBeans('product_groups',$rows);
+?>
+
 <div class="masthead">
 <div class="logo">
   <div class="logo-br"></div>
@@ -41,27 +46,21 @@
     <div class="clearfix"></div>
     <div class="container" id="bottomNav">
       <ul class="nav">
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Drinkware <b class="caret"></b></a>
+        <?php foreach($product_groups as $product_group): ?>
+        <?php $categories = $product_group->getCategories(); ?>
+        <?php if($categories == NULL ): ?>
+        <li> <a href="#" data-id="<?php echo $product_group->id; ?>"><?php echo $product_group->name; ?></a></li>
+        <?php else: ?>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-id="<?php echo $product_group->id; ?>" data-toggle="dropdown"><?php echo $product_group->name; ?><b class="caret"></b></a>
           <ul class="dropdown-menu transparent">
-            <li><a href="#">Stemware/Tumblers</a></li>
-            <li><a href="#">Beer</a></li>
-            <li><a href="#">Carafes</a></li>
-            <li><a href="#">Coffee &amp; Tea</a></li>
+            <?php foreach($categories as $category): ?>
+            <li><a href="#" data-id="<?php echo $category->id; ?>"><?php echo $category->name; ?></a></li>
+            <?php endforeach; ?>
           </ul>
         </li>
-        <li><a href="dinnerware.php">Dinnerware</a></li>
-        <li><a href="#">Multicolour</a></li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Housewares <b class="caret"></b></a>
-          <ul class="dropdown-menu transparent">
-            <li><a href="#">Food storage</a></li>
-            <li><a href="#">Canning</a></li>
-            <li><a href="#">Bowls</a></li>
-            <li><a href="#">Bottles</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Giftware</a></li>
+        <?php endif ?>
+        <?php endforeach; ?>
       </ul>
     </div>
   </div>
 </div>
-<!-- /.navbar -->

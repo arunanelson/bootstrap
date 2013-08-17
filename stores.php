@@ -1,3 +1,4 @@
+<?php require_once("inc/domainModel.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <?php require_once("inc/header.php");?>
