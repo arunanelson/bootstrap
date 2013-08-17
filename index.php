@@ -21,13 +21,13 @@
           <div id="htmlcaption" class="nivo-html-caption"> <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. </div>
         </div>
         <map name="01map">
-          <area shape="circle" coords="140,140,100" href="about.php" alt="Find Out More" title="Find out more">
+          <area shape="circle" coords="140,140,100" href="who_we_are/about.php" alt="Find Out More" title="Find out more">
         </map>
         <map name="03map">
-          <area shape="rect" coords="400,100,500,300" href="stores.php" alt="Where to buy" title="Where to buy">
+          <area shape="rect" coords="400,100,500,300" href="where_to_buy/stores/stores.php" alt="Where to buy" title="Where to buy">
         </map>
         <map name="04map">
-          <area shape="rect" coords="400,100,500,300" href="about.php#ourhistory" alt="Read our story" title="Read our story">
+          <area shape="rect" coords="400,100,500,300" href="who_we_are/about.php#ourhistory" alt="Read our story" title="Read our story">
         </map>
         <!-- /.carousel -->
         <?php require_once("inc/favourites.php"); ?>

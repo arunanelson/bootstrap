@@ -1,10 +1,10 @@
-<?php require_once("inc/domainModel.php");?>
+<?php require_once("../inc/domainModel.php");?>
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once("inc/header.php");?>
+<?php require_once("../inc/header.php");?>
 <body>
 <div class="container outercontainer shadow">
-  <?php require_once("inc/nav.php");?>
+  <?php require_once("../inc/nav.php");?>
     <div class="clearfix"></div>
   </div>
   <div class="container-fluid">
@@ -14,7 +14,7 @@
     ================================================== -->
         <div id="myCarousel" class="carousel slide boxshadow">
           <div class="carousel-inner">
-            <div class="item active"> <img src="img/slides/slide-05.jpg" alt=""> </div>
+            <div class="item active"> <img src="../img/slides/slide-05.jpg" alt=""> </div>
           </div>
         </div>
         <!-- /.carousel -->
@@ -36,7 +36,7 @@
           superior glass and plastic products for homes and businesses around the world. </div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
-            <div class="item active"> <img src="img/slides/slide-06.jpg" alt=""> </div>
+            <div class="item active"> <img src="../img/slides/slide-06.jpg" alt=""> </div>
           </div>
         </div>
         <div class="about_copy" id="glasshistory">
@@ -69,7 +69,7 @@
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
-            <div class="item active"> <img src="img/slides/slide-07.jpg" alt=""> </div>
+            <div class="item active"> <img src="../img/slides/slide-07.jpg" alt=""> </div>
           </div>
         </div>
         <div class="about_copy" id="northamerica">
@@ -86,7 +86,7 @@
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
-            <div class="item active"> <img src="img/slides/slide-08.jpg" alt=""> </div>
+            <div class="item active"> <img src="../img/slides/slide-08.jpg" alt=""> </div>
           </div>
         </div>
         <div class="about_copy" id="partners">
@@ -111,10 +111,10 @@
     <!--/row--> 
     
   </div>
-  <?php require_once("inc/footer.php"); ?>
+  <?php require_once("../inc/footer.php"); ?>
   <!--/.fluid-container--> 
 </div>
-<?php require_once("inc/js.php"); ?>
+<?php require_once("../inc/js.php"); ?>
 <script type="text/javascript">
 
 $(function(){

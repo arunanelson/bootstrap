@@ -6,15 +6,15 @@
 <meta name="author" content="Aruna Nelson - arunanelson@hotmail.com">
 
 <!-- Le styles -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" media="screen,projection" href="cssmap-usa/cssmap-usa.css" />
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-<link href="css/site.css" rel="stylesheet">
-<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="nivo-slider/themes/light/light.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="nivo-slider/themes/bar/bar.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+<link href="<?php echo BASE_URL; ?>css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen,projection" href="<?php echo BASE_URL; ?>cssmap-usa/cssmap-usa.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>css/prettyPhoto.css">
+<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>css/site.css">
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/themes/light/light.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/themes/bar/bar.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/nivo-slider.css" type="text/css" media="screen" />
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>

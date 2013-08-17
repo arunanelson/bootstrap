@@ -1,16 +1,16 @@
-<?php require_once("inc/domainModel.php");?>
+<?php require_once("../../inc/domainModel.php");?>
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once("inc/header.php");?>
+<?php require_once("../../inc/header.php");?>
 <body>
 <div class="container outercontainer shadow">
-  <?php require_once("inc/nav.php");?>
+  <?php require_once("../../inc/nav.php");?>
     <div class="clearfix"></div>
   </div>
   <div class="container-fluid">
     <div class="row">
       <div class="span12">
-        <div class="span3" id="whatsNew" title="Where to buy">WHERE TO BUY</div>
+        <div class="span3" id="pageTitle" title="Where to buy">WHERE TO BUY</div>
         <div id="salesWrapper">
           <div class="article_left w200">IN THE STORES</div>
           <div class="article_container">
@@ -43,16 +43,16 @@
         </div>
         <div class="clearfix"></div>
         <div class="grey_line"></div>
-        <?php require_once("inc/favourites.php"); ?>
+        <?php require_once("../../inc/favourites.php"); ?>
         <!--/row--> 
       </div>
       <!--/span--> 
     </div>
     <!--/row--> 
   </div>
-  <?php require_once("inc/footer.php"); ?>
+  <?php require_once("../../inc/footer.php"); ?>
   <!--/.fluid-container--> 
 </div>
-<?php require_once("inc/js.php"); ?>
+<?php require_once("../../inc/js.php"); ?>
 </body>
 </html>

@@ -5,19 +5,19 @@
   <div class="clearfix"></div>
   <ul id="flip">
     <li>
-      <div> <img src="img/fav2.png" />
+      <div> <img src="<?php echo BASE_URL; ?>img/fav2.png" />
         <div class="title"> <span class="fav-product-heading">Palatina Coolers</span><br />
           <span class="fav-product-detail">AVAILABLE IN 6 COLORS</span> </div>
       </div>
     </li>
     <li class="center">
-      <div> <img src="img/fav1.png" />
+      <div> <img src="<?php echo BASE_URL; ?>img/fav1.png" />
         <div class="title"> <span class="fav-product-heading">Tre Sensi</span><br />
           <span class="fav-product-detail">WINE TASTING GLASS</span> </div>
       </div>
     </li>
     <li>
-      <div> <img src="img/fav3.png" />
+      <div> <img src="<?php echo BASE_URL; ?>img/fav3.png" />
         <div class="title"> <span class="fav-product-heading">Sorgente Tumblers</span><br />
           <span class="fav-product-detail">AVAILABLE IN 9 COLORS</span> </div>
       </div>

@@ -1,32 +1,32 @@
 <!-- Le javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/cufon-yui.js" type="text/javascript"></script>
-<script src="fluid_files/holder.js"></script>
+<script src="<?php echo BASE_URL; ?>js/cufon-yui.js" type="text/javascript"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/holder.js"></script>
 <script type="text/javascript"> Cufon.now(); </script>
-<script src="fluid_files/jquery.js"></script>
-<script src="fluid_files/bootstrap-transition.js"></script>
-<script src="fluid_files/bootstrap-alert.js"></script>
-<script src="fluid_files/bootstrap-modal.js"></script>
-<script src="fluid_files/bootstrap-dropdown.js"></script>
-<script src="fluid_files/bootstrap-scrollspy.js"></script>
-<script src="fluid_files/bootstrap-tab.js"></script>
-<script src="fluid_files/bootstrap-tooltip.js"></script>
-<script src="fluid_files/bootstrap-popover.js"></script>
-<script src="fluid_files/bootstrap-button.js"></script>
-<script src="fluid_files/bootstrap-collapse.js"></script>
-<script src="fluid_files/bootstrap-typeahead.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/jquery.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-transition.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-alert.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-modal.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-dropdown.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-scrollspy.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-tab.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-tooltip.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-popover.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-button.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-collapse.js"></script>
+<script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-typeahead.js"></script>
 <!-- include jQuery + carouFredSel plugin -->
-<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-<script src="js/BodoniBook-Cufon_italic_400.font.js" type="text/javascript"></script>
-<script src="js/GillSans-Cufon_500.font.js" type="text/javascript"></script>
-<script src="js/jquery.cssmap.js" type="text/javascript"></script>
-<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-<script src="js/jquery-scrollto.js" type="text/javascript"></script>
-<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="<?php echo BASE_URL; ?>js/BodoniBook-Cufon_italic_400.font.js" type="text/javascript"></script>
+<script src="<?php echo BASE_URL; ?>js/GillSans-Cufon_500.font.js" type="text/javascript"></script>
+<script src="<?php echo BASE_URL; ?>js/jquery.cssmap.js" type="text/javascript"></script>
+<script src="<?php echo BASE_URL; ?>js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="<?php echo BASE_URL; ?>js/jquery-scrollto.js" type="text/javascript"></script>
+<script src="<?php echo BASE_URL; ?>js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
         Cufon.replace('#favHeader', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
-		Cufon.replace('#whatsNew', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
+		Cufon.replace('#pageTitle', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
         Cufon.replace('.footer-text a', { fontFamily: 'GillSans-Cufon' });
         Cufon.replace('.footer-bottom', { fontFamily: 'GillSans-Cufon' });
         Cufon.replace('.navi a', { fontFamily: 'GillSans-Cufon' });
@@ -46,11 +46,11 @@
 
     </script>
 <!-- optionally include helper plugins -->
-<script type="text/javascript" src="js/helper-plugins/jquery.mousewheel.min.js"></script>
-<script type="text/javascript" src="js/helper-plugins/jquery.touchSwipe.min.js"></script>
-<script type="text/javascript" src="js/helper-plugins/jquery.transit.min.js"></script>
-<script type="text/javascript" src="js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
-<script type="text/javascript" src="nivo-slider/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>js/helper-plugins/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>js/helper-plugins/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>js/helper-plugins/jquery.transit.min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>nivo-slider/jquery.nivo.slider.js"></script>
 <script type="text/javascript">
     $(window).load(function() {
         $('#slider').nivoSlider();
@@ -61,9 +61,9 @@
             $(function () {
 			$(".scrollItem").click(function(event) {
 				event.preventDefault();	
-				if(window.location.toString().indexOf('about.php') < 0)
+				if(window.location.toString().indexOf('who_we_are') < 0)
 				{
-					window.location = 'about.php' + $(this).attr("href");
+					window.location = '<?php echo BASE_URL; ?>who_we_are/' + $(this).attr("href");
 				}
 				$($(this).attr("href")).ScrollTo({
 						duration: 1000,
@@ -71,7 +71,7 @@
 					});		
 				});
 				$(".logo").click(function(){
-					window.location = "index.php";
+					window.location = "<?php echo BASE_URL; ?>";
 					});
                 $('#flip').carouFredSel({
                     auto: false,

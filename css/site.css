@@ -30,7 +30,7 @@ body {
 	font-size: 12px;
 	letter-spacing: 2px;
 }
-#whatsNew {
+#pageTitle {
 	background-image: url(../img/whats_new.png);
 	background-repeat: no-repeat;
 	cursor: pointer;

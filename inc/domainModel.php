@@ -1,4 +1,5 @@
 <?php
+define('BASE_URL', 'http://localhost:8080/bormiolirocco/bootstrap/');
 require_once('rb.php');
 R::setup('mysql:host=localhost;dbname=bormiolirocco','root','admin');
 R::$writer->setUseCache(true);
