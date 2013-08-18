@@ -108,7 +108,7 @@ var i = 0;
 				});
 				
 				$('body').on('mouseover', '.prod_colour_option', function(){
-					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("for") + '_' + $(this).attr("id") + '_big.png');
+					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("for") + '_' + $(this).attr("id").toLowerCase() + '_big.png');
 			    });
 
 			});
