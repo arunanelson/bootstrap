@@ -31,13 +31,18 @@ body {
 	letter-spacing: 2px;
 }
 #pageTitle {
-	background-image: url(../img/whats_new.png);
 	background-repeat: no-repeat;
+	background-color:#666;
 	cursor: pointer;
-	width: 188px;
+	width: auto;
+	padding-left: 35px;
+	padding-right: 35px;
 	height: 36px;
 	font-size: 18px;
 	color: #fff !important;
+	 -webkit-border-radius: 13px;
+       -moz-border-radius: 13px;
+            border-radius: 13px;
 	padding-top: 8px;
 	margin-left: 10px;
 	text-align: center;
@@ -65,22 +70,22 @@ body {
 	float: left;
 	margin-right: 20px;
 }
-#prodRed {
+#Red {
 	background-image: url(../img/red.png);
 }
-#prodOrange {
+#Orange {
 	background-image: url(../img/orange.png);
 }
-#prodGreen {
+#Green {
 	background-image: url(../img/green.png);
 }
-#prodBlue {
+#Blue {
 	background-image: url(../img/blue.png);
 }
-#prodPurple {
+#Purple {
 	background-image: url(../img/purple.png);
 }
-#prodPink {
+#Pink {
 	background-image: url(../img/pink.png);
 }
 #favHeader {
@@ -173,7 +178,7 @@ body {
 }
 
 .lightbox_header {
-	font-size: 30px;
+	font-size: 24px;
 }
 .prod_description {
 	display: none;
@@ -251,16 +256,14 @@ body {
 	position: absolute;
 	cursor: pointer;
 	bottom: 70px;
-	left: 70px;
+	left: 60px;
 }
 .wide {
 	left: 30px !important;
 }
 .product div {
-	position: absolute;
+	margin-top:190px;
 	cursor: pointer;
-	bottom: 20px;
-	left: 47px;
 }
 .fleft {
 	float: left;

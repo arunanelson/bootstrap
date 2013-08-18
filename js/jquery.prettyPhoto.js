@@ -443,6 +443,9 @@
 		* Closes prettyPhoto.
 		*/
 		$.prettyPhoto.close = function(){
+			i= 0;
+				$(".specs").hide();
+				$(".summary").show();
 			if($pp_overlay.is(":animated")) return;
 			
 			$.prettyPhoto.stopSlideshow();

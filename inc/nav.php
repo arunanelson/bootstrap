@@ -22,7 +22,7 @@
             <li><a class="scrollItem" href="#facts">Facts &amp; Figures</a></li>
           </ul>
         </li>
-        <li><a href="<?php echo BASE_URL; ?>products">What's new</a></li>
+        <li><a href="<?php echo BASE_URL; ?>products/whats_new">What's new</a></li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Where to buy<b class="caret"></b></a>
           <ul class="dropdown-menu transparent">
             <li class="nav-header">Retail</li>
@@ -54,7 +54,7 @@
         <li class="dropdown"> <a href="<?php echo BASE_URL.'products/?group='.$product_group->id; ?>" class="dropdown-toggle" data-id="<?php echo $product_group->id; ?>" data-toggle="dropdown"><?php echo $product_group->name; ?><b class="caret"></b></a>
           <ul class="dropdown-menu transparent">
             <?php foreach($categories as $category): ?>
-            <li><a href="<?php echo BASE_URL.'products/line/?group='.$product_group->id.'&cat='.$category->id; ?>" data-id="<?php echo $category->id; ?>"><?php echo $category->name; ?></a></li>
+            <li><a href="<?php echo BASE_URL.'products/?group='.$product_group->id.'&cat='.$category->id; ?>" data-id="<?php echo $category->id; ?>"><?php echo $category->name; ?></a></li>
             <?php endforeach; ?>
           </ul>
         </li>
