@@ -37,10 +37,12 @@
       </ul>
       <div id="faceBook"></div>
       <div id="twitter"></div>
-      <div id="searchFrm">
-        <form class="navbar-form pull-right">
-          <input class="span2" type="text" placeholder="Search">
-        </form>
+      <div id="searchFrm" class="searchbox" onclick="$(this).find('input').focus();">
+        <div> <a></a> <img src="<?php echo BASE_URL; ?>img/preloader.gif" border=0 id="ipreloader" />
+          <form class="navbar-form pull-right">
+            <input id="iSearch" class="span2" type="text" name="q" autocomplete="off" placeholder="Search">
+          </form>
+        </div>
       </div>
     </div>
     <div class="clearfix"></div>

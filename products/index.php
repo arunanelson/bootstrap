@@ -3,7 +3,7 @@
 <html lang="en">
 <?php
  $group = $_GET['group'];
- $cat = '%';
+ $cat = '@prod_cat_id';
  
  $prod_group = R::load('product_groups', $group);
  $pageTitle = $prod_group->name;

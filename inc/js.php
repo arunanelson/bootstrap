@@ -4,7 +4,9 @@
 <script src="<?php echo BASE_URL; ?>js/cufon-yui.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>fluid_files/holder.js"></script>
 <script type="text/javascript"> Cufon.now(); </script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script-->
 <script src="<?php echo BASE_URL; ?>fluid_files/jquery.js"></script>
+<script src="<?php echo BASE_URL; ?>js/jquery-migrate-1.2.1.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-transition.js"></script>
 <script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-alert.js"></script>
 <script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-modal.js"></script>
@@ -24,6 +26,7 @@
 <script src="<?php echo BASE_URL; ?>js/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/jquery-scrollto.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script src="<?php echo BASE_URL; ?>js/isuggest.js" type="text/javascript"></script>
 <script type="text/javascript">
         Cufon.replace('#favHeader', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
 		Cufon.replace('#pageTitle', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
@@ -73,6 +76,7 @@
 				$(".logo").click(function(){
 					window.location = "<?php echo BASE_URL; ?>";
 					});
+				$('#iSearch').iSuggest({ url: '<?php echo BASE_URL; ?>inc/results/mysql_suggestions_results.php'});
                 $('#flip').carouFredSel({
                     auto: false,
                     width: 960,

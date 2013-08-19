@@ -8,8 +8,9 @@
 <!-- Le styles -->
 <link href="<?php echo BASE_URL; ?>css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" media="screen,projection" href="<?php echo BASE_URL; ?>cssmap-usa/cssmap-usa.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>css/prettyPhoto.css">
-<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>css/site.css">
+<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>css/prettyPhoto.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>css/isuggest.css">
+<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>css/site.css" />
 <link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/themes/default/default.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/themes/light/light.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
@@ -21,6 +22,5 @@
     <![endif]-->
 
 <!-- Fav and touch icons -->
-<link rel="shortcut icon" href="favicon.ico">
-<style type="text/css"></style>
+<link rel="shortcut icon" href="favicon.ico" />
 </head>
