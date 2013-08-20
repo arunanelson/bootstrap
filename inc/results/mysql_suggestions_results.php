@@ -20,12 +20,13 @@ $sql = "SELECT *
 $res = mysql_query($sql) or die (mysql_error());
 while ($row = mysql_fetch_assoc ($res)) {
 	$results[] = $row["name"];
+	$ids[] = $row["line_id"];
 }
 
 if(!empty($results)) {
 	echo "<ul>";
 	for($i=0;$i<count($results);$i++){
-		$url = @str_ireplace("%s", urlencode($results[$i]), $_GET['url']);
+		$url = @str_ireplace("%s", urlencode($ids[$i]), $_GET['url']);
 		echo "<li><a href='".$url."' target='".$target."'>".str_ireplace($q, $q."<b>", $results[$i])."</b></a></li>";
 	}
 	echo "</ul>";
