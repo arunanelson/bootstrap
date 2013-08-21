@@ -26,10 +26,10 @@
         <div class="span3" id="pageTitle" title="<?php echo $prod_line->name; ?>"><?php echo $pageTitle; ?></div>
         <div id="productsWrapper">
           <?php foreach($products as $product): ?>
-          <div class="fleft product <?php echo $prod_line->colour; ?>"> <a href="../../img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto">
+          <div class="fleft product <?php echo $prod_line->colour; ?>">
             <div class="prod_description"><span class="lightbox_header"><?php echo $product->name; ?></span>
               <div class="m5t">
-                <button type="button" class="btn btn-default btn-xs" id="specs" style="font-size:10px">View Specifications &raquo;</button>
+                <button type="button" class="btn btn-default btn-xs" style="font-size:10px">View Specifications &raquo;</button>
               </div>
               <div class="prod_details">
                 <ul class="prod_highlights summary">
@@ -56,7 +56,7 @@
                 <?php endif; ?>
               </div>
             </div>
-            <img src="../../img/catalog/<?php echo $product->pic; ?>.png"/></a>
+            <a href="../../img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto"><img src="../../img/catalog/<?php echo $product->pic; ?>.png"/></a>
             <div><span class="fav-product-heading" product="<?php echo $product->name; ?>"><?php echo $product->name; ?></span><br />
               <span class="fav-product-detail"><?php echo $specs->cc_oz; ?> oz
               <?php if($product->has_colours == 1){
@@ -79,11 +79,10 @@
   <!--/.fluid-container--> 
 </div>
 <?php require_once("../../inc/js.php"); ?>
-<!-- To avoid delays, initialize Cufón before other scripts at the bottom --> 
 <script type="text/javascript" charset="utf-8">
 var i = 0;
 			$(document).ready(function(){
-			  $('body').on('click', '#specs', function(){
+			  $('body').on('click', '.btn-xs', function(){
 					
 					if(i == 0)
 					{
