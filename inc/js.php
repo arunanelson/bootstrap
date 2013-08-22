@@ -57,6 +57,32 @@
 <script type="text/javascript">
     $(window).load(function() {
         $('#slider').nivoSlider();
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+					  $('body').on('click', '.btn-xs', function(){
+					
+					if(i == 0)
+					{
+						$(".summary").hide('slow');
+						$(".specs").show('slow');
+						$(this).text("View Details >>");
+						i = 1;
+					}
+					else
+					{
+						$(".specs").hide('slow');
+						$(".summary").show('slow');
+						$(this).text("View Specifications >>");
+						i = 0;
+					}
+			    });
+								
+				$(".fav-product-heading").click(function(){
+					$.prettyPhoto.open('<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("product") + '_big.png','',$(this).parent().parent().find("div[class=prod_description]").html());
+				});
+				
+				$('body').on('mouseover', '.prod_colour_option', function(){
+					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("for") + '_' + $(this).attr("id").toLowerCase() + '_big.png');
+			    });
     }); 
     </script>
 <script>
