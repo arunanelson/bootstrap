@@ -63,6 +63,7 @@
 					{
 						$(".summary").hide('slow');
 						$(".specs").show('slow');
+						Cufon.replace('.specs', { fontFamily: 'GillSans-Cufon', fontSize: '11px' }); 
 						$(this).text("View Details >>");
 						i = 1;
 					}
@@ -80,7 +81,9 @@
 				});
 				
 				$('body').on('mouseover', '.prod_colour_option', function(){
-					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("for") + '_' + $(this).attr("id").toLowerCase() + '_big.png');
+					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("for") + '_' + $(this).attr("data-item-id").toLowerCase() + '_big.png');
+					$(this).parent().find(".specs").find("span[class=item_code]").html($(this).attr("data-item-code"));
+					Cufon.replace('.item_code', { fontFamily: 'GillSans-Cufon', fontSize: '11px' });
 			    });
     }); 
     </script>

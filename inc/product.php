@@ -14,14 +14,14 @@
       <li> <?php echo $specs->cc_oz; ?> oz - <?php echo $specs->cc_cl; ?> cl</li>
       <li> H <?php echo $specs->h_inches; ?> - <?php echo $specs->h_mm; ?> mm</li>
       <li> Ø <?php echo $specs->theta_i; ?> - <?php echo $specs->theta_mm; ?> mm</li>
-      <li> Item code <?php echo $specs->item_code; ?></li>
+      <li> Item code: <span class="item_code"><?php echo $specs->item_code; ?></span></li>
       <li> Pack: <?php echo $specs->pack; ?> </li>
     </ul>
     <?php if($product->has_colours == 1): ?>
     <?php $colours = $product->getColours(); ?>
     <p class="prod_colours">COLOURS</p>
     <?php foreach($colours as $colour): ?>
-    <div class="prod_colour_option" id="<?php echo $colour->name; ?>" for="<?php echo $product->name; ?>"></div>
+    <div class="prod_colour_option <?php echo "item_".$colour->name; ?>" data-item-id="<?php echo $colour->name; ?>" for="<?php echo $product->name; ?>" data-item-code="<?php echo $colour->code; ?>"></div>
     <?php endforeach; ?>
     <div class="clearfix"></div>
     <?php endif; ?>

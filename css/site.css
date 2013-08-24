@@ -71,24 +71,7 @@ body {
 	float: left;
 	margin-right: 20px;
 }
-#Red {
-	background-image: url(../img/red.png);
-}
-#Orange {
-	background-image: url(../img/orange.png);
-}
-#Green {
-	background-image: url(../img/green.png);
-}
-#Blue {
-	background-image: url(../img/blue.png);
-}
-#Purple {
-	background-image: url(../img/purple.png);
-}
-#Pink {
-	background-image: url(../img/pink.png);
-}
+
 #favHeader {
 	margin-left: 370px;
 	letter-spacing: 1px;
@@ -354,6 +337,24 @@ li.center img {
 }
 .red {
 	color: #cc0000;
+}
+.item_red {
+	background-image: url(../img/red.png);
+}
+.item_orange {
+	background-image: url(../img/orange.png);
+}
+.item_green {
+	background-image: url(../img/green.png);
+}
+.item_blue {
+	background-image: url(../img/blue.png);
+}
+.item_purple {
+	background-image: url(../img/purple.png);
+}
+.item_pink {
+	background-image: url(../img/pink.png);
 }
 .grey_line {
 	background-image: url(../img/grey_line.png);
