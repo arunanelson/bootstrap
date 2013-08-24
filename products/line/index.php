@@ -5,7 +5,7 @@
  $product_line = R::load('product_lines', $id);
  $prod_group = R::load('product_groups', $product_line->prod_group_id);
  $prod_cat = R::load('categories', $product_line->prod_cat_id);
- $pageTitle = $prod_group->name. ' | '.$prod_cat->name.' | '.$product_line->name;
+ $pageTitle = $prod_group->name. ' | '. ($prod_cat->id != 0  ? $prod_cat->name.' | ' : '').$product_line->name;
  	
  $rows = R::$f->begin()->select('*')->from('products')
   ->where(' line_id = ? ')

@@ -11,7 +11,9 @@
     </ul>
     <ul class="prod_highlights specs">
       <?php $specs = reset($product->getSpecs()); ?>
+      <?php if($specs->cc_oz != NULL && $specs->cc_oz !='na'): ?>
       <li> <?php echo $specs->cc_oz; ?> oz - <?php echo $specs->cc_cl; ?> cl</li>
+      <?php endif; ?>
       <li> H <?php echo $specs->h_inches; ?> - <?php echo $specs->h_mm; ?> mm</li>
       <li> Ø <?php echo $specs->theta_i; ?> - <?php echo $specs->theta_mm; ?> mm</li>
       <li> Item code: <span class="item_code"><?php echo $specs->item_code; ?></span></li>
@@ -29,7 +31,7 @@
 </div>
 <a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>.png"/></a>
 <div><span class="fav-product-heading" product="<?php echo $product->name; ?>"><?php echo $product->name; ?></span><br />
-  <span class="fav-product-detail"><?php echo $specs->cc_oz; ?> oz
+  <span class="fav-product-detail"><?php echo (($specs->cc_oz != NULL && $specs->cc_oz !='na') ? $specs->cc_oz. ' oz' : 'Ø '.$specs->theta_i); ?>
   <?php if($product->has_colours == 1){
 				  $coloursCount = count($colours);
 				  echo '• '.$coloursCount.'COLORS';

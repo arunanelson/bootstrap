@@ -55,7 +55,6 @@
 <script type="text/javascript" src="<?php echo BASE_URL; ?>nivo-slider/jquery.nivo.slider.js"></script>
 <script type="text/javascript">
     $(window).load(function() {
-        $('#slider').nivoSlider();
 		$("a[rel^='prettyPhoto']").prettyPhoto();
 					  $('body').on('click', '.btn-xs', function(){
 					
@@ -86,7 +85,7 @@
 					Cufon.replace('.item_code', { fontFamily: 'GillSans-Cufon', fontSize: '11px' });
 			    });
     }); 
-    </script>
+</script>
 <script>
         !function ($) {
             $(function () {
