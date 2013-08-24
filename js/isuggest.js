@@ -87,7 +87,7 @@
 				var width = el.parents('div.searchbox').outerWidth();
 				var height = el.parents('div.searchbox').outerHeight();
 				var top = el.parents('div.searchbox').offset().top+settings.topOffset;
-				var left = el.parents('div.searchbox').offset().left;
+				var left = el.parents('div.searchbox').offset().left - 30;
 
 				container.css({'width':width+'px', 'top':(top+height)+'px', 'left':left+'px'});
 			}

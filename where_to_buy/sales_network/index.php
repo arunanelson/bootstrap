@@ -10,10 +10,10 @@
   <div class="container-fluid">
     <div class="row">
       <div class="span12">
-        <div class="span3" id="pageTitle" title="Sales Network">SALES NETWORK</div>
+        <div class="span3" id="pageTitle" title="where to buy">WHERE TO BUY</div>
         <div id="salesWrapper" class="m5t">
           <div class="article_left w200">
-            <div class="m40b" id="sales">SALES NETWORK</div>
+            <div class="m40b m20t" id="sales">SALES NETWORK</div>
             <span id="city">New York</span>
             <div id="address" class="m20t"> Bormioli Rocco Showroom<br>
               41 Madison Ave<br>

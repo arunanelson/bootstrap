@@ -4,7 +4,6 @@
 <script src="<?php echo BASE_URL; ?>js/cufon-yui.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>fluid_files/holder.js"></script>
 <script type="text/javascript"> Cufon.now(); </script>
-<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script-->
 <script src="<?php echo BASE_URL; ?>fluid_files/jquery.js"></script>
 <script src="<?php echo BASE_URL; ?>js/jquery-migrate-1.2.1.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-transition.js"></script>
