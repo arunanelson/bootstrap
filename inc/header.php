@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/themes/bar/bar.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php echo BASE_URL; ?>nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+<link href="http://fonts.googleapis.com/css?family=Arimo:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>

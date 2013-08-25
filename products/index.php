@@ -21,7 +21,7 @@
   ->put($group)->put($cat)->get();
  $product_lines = R::convertToBeans('product_lines',$rows); 
 
- $index = 1;
+ $index = 0;
 ?>
 <?php require_once("../inc/header.php");?>
 <body>
@@ -45,8 +45,8 @@
             <?php endif; ?>
           </div>
           <?php $index++; ?>
-          <?php if($index / 4 == 0): ?>
-          <div class="clearfix"></div>
+          <?php if($index %4 == 0): ?>
+          <div class="clearfix"> </div>
           <?php endif; ?>
           <?php endforeach; ?>
           <div class="clearfix"></div>

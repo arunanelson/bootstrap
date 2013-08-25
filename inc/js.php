@@ -26,6 +26,7 @@
 <script src="<?php echo BASE_URL; ?>js/jquery-scrollto.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo BASE_URL; ?>js/isuggest.js" type="text/javascript"></script>
+<script src="<?php echo BASE_URL; ?>js/gen_validatorv31.js" type="text/javascript"></script>
 <script type="text/javascript">
         Cufon.replace('#favHeader', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
 		Cufon.replace('#pageTitle', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
@@ -44,6 +45,7 @@
         Cufon.replace('.article_left', { fontFamily: 'GillSans-Cufon', fontSize: '14px' });
 		Cufon.replace('.fav-product-detail', { fontFamily: 'GillSans-Cufon' });
 	    Cufon.replace('#city', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
+	    Cufon.replace('#thank-you', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
 		Cufon.replace('#sales', { fontFamily: 'GillSans-Cufon', fontSize: '18px', fontWeight: 'bold' });
 
     </script>
@@ -56,7 +58,7 @@
 <script type="text/javascript">
     $(window).load(function() {
 		$("a[rel^='prettyPhoto']").prettyPhoto();
-					  $('body').on('click', '.btn-xs', function(){
+			$('body').on('click', '.btn-xs', function(){
 					
 					if(i == 0)
 					{
@@ -76,7 +78,7 @@
 			    });
 								
 				$(".fav-product-heading").click(function(){
-					$.prettyPhoto.open('<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("product") + '_big.png','',$(this).parent().parent().find("div[class=prod_description]").html());
+					$(this).parent().parent().find("a[rel^='prettyPhoto']")[0].click()
 				});
 				
 				$('body').on('mouseover', '.prod_colour_option', function(){

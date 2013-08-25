@@ -46,7 +46,7 @@
 	div.pp_default a.pp_arrow_next { background: url(../img/prettyPhoto/default/sprite.png) -31px -3px no-repeat; height: 20px; margin: 4px 0 0 0; width: 20px; }
 	div.pp_default a.pp_arrow_next { left: 52px; background-position: -82px -3px; } /* The next arrow in the bottom nav */
 	div.pp_default .pp_content_container .pp_details { margin-top: 5px; }
-	div.pp_default .pp_nav { clear: none; height: 30px; width: 105px; position: relative; }
+	div.pp_default .pp_nav { clear: none; height: 30px; width: 105px; position: absolute; margin-left:100px; bottom:85px}
 
 	
 	div.pp_default .pp_close:hover, div.pp_default .pp_nav .pp_play:hover, div.pp_default .pp_nav .pp_pause:hover, div.pp_default .pp_arrow_next:hover, div.pp_default .pp_arrow_previous:hover { opacity:0.7; }
@@ -359,7 +359,8 @@
 		
 		.pp_hoverContainer {
 			position: absolute;
-			top: 0;
+			top: 200px;
+			left: 80px;
 			width: 100%;
 			z-index: 2000;
 		}

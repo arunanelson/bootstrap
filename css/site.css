@@ -32,7 +32,7 @@ body {
 }
 #pageTitle {
 	background-repeat: no-repeat;
-	background-color:#666;
+	background-color: #666;
 	cursor: pointer;
 	width: auto;
 	padding-left: 25px;
@@ -40,11 +40,11 @@ body {
 	height: auto;
 	font-size: 18px;
 	color: #fff !important;
-	 -webkit-border-radius: 13px;
-       -moz-border-radius: 13px;
-            border-radius: 13px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
 	padding-top: 8px;
-	padding-bottom:8px;
+	padding-bottom: 8px;
 	margin-left: 5px;
 	text-align: center;
 }
@@ -71,7 +71,6 @@ body {
 	float: left;
 	margin-right: 20px;
 }
-
 #favHeader {
 	margin-left: 370px;
 	letter-spacing: 1px;
@@ -160,7 +159,6 @@ body {
 	background-image: url(../img/bg.png);
 	border: 1px solid #000;
 }
-
 .lightbox_header {
 	font-size: 24px;
 }
@@ -246,7 +244,7 @@ body {
 	left: 30px !important;
 }
 .product div {
-	margin-top:190px;
+	margin-top: 190px;
 	cursor: pointer;
 }
 .fleft {
@@ -415,31 +413,22 @@ li.center img {
 	height: 256px;
 	float: left;
 }
-
 .article_title {
 	border-bottom: 1px solid #666;
 }
-
-.w300
-{
-	width:300px;
+.w300 {
+	width: 300px;
 }
-
-.w200
-{
-	width:200px;
+.w200 {
+	width: 200px;
 }
-
-.w180
-{
-	width:180px;
+.w180 {
+	width: 180px;
 }
-.w160
-{
+.w160 {
 	width: 160px;
 }
-.w310
-{
+.w310 {
 	width: 310px;
 }
 .article_date {
@@ -465,7 +454,7 @@ li.center img {
 .about_img {
 	margin-top: 45px;
 	margin-left: 10px;
-	width:960px;
+	width: 960px;
 	margin-bottom: 30px;
 }
 .form-group input {
@@ -513,4 +502,135 @@ li.center img {
 }
 .subItem {
 	margin-left: 10px !important;
+}
+/*
+Contact Form by html-form-guide.com
+You can customize all the aspects of the form in this style sheet
+All the style elements use form id selector(notice the #contactus). So, including this
+stylesheet does not affect the other elements at all!
+*/
+#thank-you {
+	padding-left: 280px;
+}
+#contactus #scaptcha {
+	width: 60px;
+	height: 18px;
+}
+#contactus input[type="submit"] {
+	width: 120px;
+	height: 30px;
+	margin-top: 20px;
+}
+#contactus input[type="text"]:focus, textarea:focus {
+	color : #777777;
+	border : 0px solid #666666;
+	background-color : #ffffff;
+	font-weight: normal;
+}
+#contactus .container {
+	margin-top: 8px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#contactus .error {
+	font-family: 'Arimo', arial, sans-serif;
+	font-size: 12px;
+	color: #c85849;
+}
+#contactus fieldset#antispam {
+	padding: 2px;
+	border-top: 0px solid #cccccc;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	width: 350px;
+}
+#contactus fieldset#antispam legend {
+	font-family : 'Arimo', arial, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #555555;
+}
+/* spam_trap: This input is hidden. This is here to trick the spam bots*/
+#contactus .spmhidip {
+	display: none;
+	width: 10px;
+	height: 3px;
+}
+#fg_crdiv {
+	font-family : 'Arimo', arial, sans-serif;
+	font-size: 0.3em;
+	opacity: .2;
+	-moz-opacity: .2;
+	filter: alpha(opacity=20);
+}
+#fg_crdiv p {
+	display: none;
+}
+/*-----------Button Styles-----------*/
+.button {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: normal;
+	line-height: 1;
+	position: relative;
+	cursor: pointer;
+	font-style: normal;
+	letter-spacing: normal;
+}
+.button:hover, .button:active, .button.current {
+	color: #ffffff;
+	background-color: #555555;
+	text-shadow: 0 0 0 transparent, 0 1px 0px #000000;
+}
+.small.button {
+	font-size: 12px;
+	font-family: 'Arimo', arial, sans-serif;
+	padding: 6px 15px 7px 15px;
+}
+.medium.button {
+	font-size: 14px;
+	font-family: 'Oswald', arial, sans-serif;
+	padding: 12px 25px 15px 25px;
+}
+.large.button {
+	font-size: 18px;
+	font-family: 'Oswald', arial, sans-serif;
+	padding: 16px 28px 18px 28px;
+}
+.highlight.button {
+	color: #ffffff;
+	text-shadow: 0 0 0 transparent, 0px 1px 0px #000000;
+	-moz-box-shadow: 0 1px 3px #555555;
+	-webkit-box-shadow: 0 1px 3px #555555;
+	border-top: 1px #03202e solid;
+	border-bottom: 0px #03202e solid;
+	border-right: 0px #0c6491 solid;
+	border-left: 0px #0c6491 solid;
+	background-color: #0c6491;
+	background-image: url(../img/gloss3.png);
+	background-position: center;
+	background-repeat: repeat-x;
+}
+.highlight.button:hover {
+	background-image: url(../img/gloss4.png);
+	background-position: center;
+	background-repeat: repeat-x;
+}
+h3 {
+	font-size: 20px;
+	font-family: 'Oswald', arial, sans-serif;
+	color: #666666;
+	padding: 0 0 10px 0;
+	text-shadow: 0 0 0 transparent, #ffffff 0px 1px 0px;
+}
+.clearformspacing {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	margin: 5px 0px 0px 0px;
 }

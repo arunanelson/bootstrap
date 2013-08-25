@@ -60,15 +60,7 @@
 						</div> \
 					</div> \
 					<div class="pp_overlay"></div>',
-			gallery_markup: '<div class="pp_gallery"> \
-								<a href="#" class="pp_arrow_previous">Previous</a> \
-								<div> \
-									<ul> \
-										{gallery} \
-									</ul> \
-								</div> \
-								<a href="#" class="pp_arrow_next">Next</a> \
-							</div>',
+			gallery_markup: '',
 			image_markup: '<img id="fullResImage" src="{path}" />',
 			flash_markup: '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>',
 			quicktime_markup: '<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="src" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed src="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"></embed></object>',
@@ -124,7 +116,6 @@
 		* Initialize prettyPhoto.
 		*/
 		$.prettyPhoto.initialize = function() {
-			
 			settings = pp_settings;
 			if(settings.theme == 'pp_default') settings.horizontal_padding = 16;
 			
@@ -136,11 +127,11 @@
 			// Put the SRCs, TITLEs, ALTs into an array.
 			pp_images = (isSet) ? jQuery.map(matchedObjects, function(n, i){ if($(n).attr(settings.hook).indexOf(theRel) != -1) return $(n).attr('href'); }) : $.makeArray($(this).attr('href'));
 			pp_titles = (isSet) ? jQuery.map(matchedObjects, function(n, i){ if($(n).attr(settings.hook).indexOf(theRel) != -1) return ($(n).find('img').attr('alt')) ? $(n).find('img').attr('alt') : ""; }) : $.makeArray($(this).find('img').attr('alt'));
-			pp_descriptions = (isSet) ? jQuery.map(matchedObjects, function(n, i){ if($(n).attr(settings.hook).indexOf(theRel) != -1) return ($(n).attr('title')) ? $(n).attr('title') : ""; }) : $.makeArray($(this).parent().find('div[class=prod_description]').html());
+			pp_descriptions = $.makeArray($(this).parent().find('div[class=prod_description]').html());
 			
 			if(pp_images.length > settings.overlay_gallery_max) settings.overlay_gallery = false;
 			
-			set_position = jQuery.inArray($(this).attr('href'), pp_images); // Define where in the array the clicked item is positionned
+			set_position = jQuery.inArray($(this).attr('href'), pp_images); // Define where in the array the clicked item is positioned
 			rel_index = (isSet) ? set_position : $("a["+settings.hook+"^='"+theRel+"']").index($(this));
 			
 			_build_overlay(this); // Build the overlay {this} being the caller
@@ -195,8 +186,8 @@
 			$pp_pic_holder.find('.currentTextHolder').text((set_position+1) + settings.counter_separator_label + $(pp_images).size());
 
 			// Set the description
-			if(typeof pp_descriptions[set_position] != 'undefined' && pp_descriptions[set_position] != ""){
-				$pp_pic_holder.find('.pp_description').show().html(unescape(pp_descriptions[set_position]));
+			if(typeof pp_descriptions[0] != 'undefined' && pp_descriptions[0] != ""){
+				$pp_pic_holder.find('.pp_description').show().html(unescape(pp_descriptions[0]));
 			}else{
 				$pp_pic_holder.find('.pp_description').hide();
 			}
@@ -524,6 +515,7 @@
 			Cufon.replace('.lightbox_header', { fontFamily: 'BodoniBook-Cufon', fontWeight: 'bold' });
             Cufon.replace('.uom', { fontFamily: 'GillSans-Cufon', fontSize: '16px' }); 
 			Cufon.replace('.summary', { fontFamily: 'GillSans-Cufon', fontSize: '11px' }); 
+			Cufon.replace('.currentTextHolder', { fontFamily: 'GillSans-Cufon', fontSize: '11px' }); 
 			Cufon.replace('.prod_colours', { fontFamily: 'GillSans-Cufon', fontSize: '12px' }); 
 		    Cufon.replace('.pp_social', { fontFamily: 'GillSans-Cufon', fontSize: '12px' }); 
 			Cufon.replace('.prod_strapline', { fontFamily: 'BodoniBook-Cufon', fontSize: '18px' }); 
@@ -803,7 +795,7 @@
 			
 			// Inject the play/pause if it's a slideshow
 			if(settings.slideshow){
-				$pp_pic_holder.find('.pp_nav').prepend('<a href="#" class="pp_play">Play</a>')
+				//$pp_pic_holder.find('.pp_nav').prepend('<a href="#" class="pp_play">Play</a>')
 				$pp_pic_holder.find('.pp_nav .pp_play').click(function(){
 					$.prettyPhoto.startSlideshow();
 					return false;

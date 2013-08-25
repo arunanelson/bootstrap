@@ -36,7 +36,7 @@
       </div>
       <!--/span--> 
     </div>
-    <!--/row-->    
+    <!--/row--> 
   </div>
   <?php require_once("../../inc/footer.php"); ?>
   <!--/.fluid-container--> 
