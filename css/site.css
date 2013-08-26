@@ -236,12 +236,14 @@ body {
 }
 .product img {
 	position: absolute;
-	cursor: pointer;
-	bottom: 70px;
-	left: 60px;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
-.wide {
-	left: 30px !important;
+.prod_logos {
+	display: none;
 }
 .product div {
 	margin-top: 190px;

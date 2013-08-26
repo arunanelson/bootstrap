@@ -6,7 +6,7 @@
     <ul class="prod_highlights summary">
       <?php $details = explode("•", $product_line->details); ?>
       <?php foreach(array_slice($details, 1) as $detail): ?>
-      <li><?php echo $detail; ?></li>
+      <li><?php echo (trim($detail)); ?></li>
       <?php endforeach; ?>
     </ul>
     <ul class="prod_highlights specs">
@@ -29,9 +29,16 @@
     <?php endif; ?>
   </div>
 </div>
+<div class="prod_logos">
+  <?php if($specs->logos != NULL && $specs->logos !=''): ?>
+  <?php $logos = explode(",", $specs->logos); ?>
+  <?php foreach($logos as $logo): ?>
+  <img src="<?php echo BASE_URL."img/logos/".(trim($logo)).".png"; ?>" />
+  <?php endforeach; ?>
+  <?php endif; ?>
+</div>
 <?php if($product->alt_pic != NULL): ?>
-<a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>.png"/></a> 
-<a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->alt_pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img style="display:none" src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->alt_pic; ?>.png"/></a>
+<a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>.png"/></a> <a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->alt_pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img style="display:none" src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->alt_pic; ?>.png"/></a>
 <?php else: ?>
 <a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>.png"/></a>
 <?php endif; ?>

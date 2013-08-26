@@ -53,6 +53,7 @@
 											</div> \
 											<p class="pp_description"></p> \
 											<div class="pp_social">{pp_social}</div> \
+											<div class="pp_logo"></div> \
 											<a class="pp_close" href="#">Close</a> \
 										</div> \
 									</div> \
@@ -71,7 +72,7 @@
 		}, pp_settings);
 		
 		// Global variables accessible only by prettyPhoto
-		var matchedObjects = this, percentBased = false, pp_dimensions, pp_open,
+		var matchedObjects = this, percentBased = false, pp_dimensions, pp_open, pp_logos,
 		
 		// prettyPhoto container specific
 		pp_contentHeight, pp_contentWidth, pp_containerHeight, pp_containerWidth,
@@ -128,6 +129,7 @@
 			pp_images = (isSet) ? jQuery.map(matchedObjects, function(n, i){ if($(n).attr(settings.hook).indexOf(theRel) != -1) return $(n).attr('href'); }) : $.makeArray($(this).attr('href'));
 			pp_titles = (isSet) ? jQuery.map(matchedObjects, function(n, i){ if($(n).attr(settings.hook).indexOf(theRel) != -1) return ($(n).find('img').attr('alt')) ? $(n).find('img').attr('alt') : ""; }) : $.makeArray($(this).find('img').attr('alt'));
 			pp_descriptions = $.makeArray($(this).parent().find('div[class=prod_description]').html());
+			pp_logos = $(this).parent().find('div[class=prod_logos]').html();
 			
 			if(pp_images.length > settings.overlay_gallery_max) settings.overlay_gallery = false;
 			
@@ -171,6 +173,9 @@
 		
 			if(settings.deeplinking)
 				setHashtag();
+				
+			//display product logo
+			$pp_pic_holder.find('.pp_logo').html($(pp_logos));
 		
 			// Rebuild Facebook Like Button with updated href
 			if(settings.social_tools){

@@ -170,7 +170,7 @@
                 <div class="clearfix"></div>
               </div>
             </div>
-            <img src="../../img/catalog/fresh.png" class="wide"/></a>
+            <img src="../../img/catalog/fresh.png"/></a>
             <div><span class="fav-product-heading" product="tre_sensi">Fresh</span><br />
               <span class="fav-product-detail">4 VARIETIES • 3 COLOURS</span></div>
           </div>
@@ -185,7 +185,7 @@
                 <p class="prod_strapline">All-purpose wine tasting glass</p>
               </div>
             </div>
-            <img src="../../img/catalog/prometeo.png" class="wide"/></a>
+            <img src="../../img/catalog/prometeo.png"/></a>
             <div><span class="fav-product-heading" product="tre_sensi">Prometeo</span><br />
               <span class="fav-product-detail">WINE TASTING GLASS</span></div>
           </div>
