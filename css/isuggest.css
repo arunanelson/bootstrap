@@ -85,10 +85,10 @@ div#isuggest ul li a {
 div#isuggest ul li img
 {
 	float:left; 
-	margin-top:3px; 
+	margin-top:6px; 
 	margin-right:10px; 
 	margin-left:5px;
-	width:20px;
+	height:20px;
 }
 
 div#isuggest ul li a b {

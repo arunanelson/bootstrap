@@ -514,7 +514,7 @@
 			
 			Cufon.replace('.lightbox_header', { fontFamily: 'BodoniBook-Cufon', fontWeight: 'bold' });
             Cufon.replace('.uom', { fontFamily: 'GillSans-Cufon', fontSize: '16px' }); 
-			Cufon.replace('.summary', { fontFamily: 'GillSans-Cufon', fontSize: '11px' }); 
+			Cufon.replace('.summary', { fontFamily: 'GillSans-Cufon', fontSize: '10px' }); 
 			Cufon.replace('.currentTextHolder', { fontFamily: 'GillSans-Cufon', fontSize: '11px' }); 
 			Cufon.replace('.prod_colours', { fontFamily: 'GillSans-Cufon', fontSize: '12px' }); 
 		    Cufon.replace('.pp_social', { fontFamily: 'GillSans-Cufon', fontSize: '12px' }); 

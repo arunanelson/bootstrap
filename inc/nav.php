@@ -53,7 +53,7 @@
         <?php if($categories == NULL ): ?>
         <li> <a href="<?php echo BASE_URL.'products/?group='.$product_group->id; ?>" data-id="<?php echo $product_group->id; ?>"><?php echo $product_group->name; ?></a></li>
         <?php else: ?>
-        <li class="dropdown"> <a href="<?php echo BASE_URL.'products/?group='.$product_group->id; ?>" class="dropdown-toggle" data-id="<?php echo $product_group->id; ?>" data-toggle="dropdown"><?php echo $product_group->name; ?><b class="caret"></b></a>
+        <li class="dropdown"> <a data-target="#" href="<?php echo BASE_URL.'products/?group='.$product_group->id; ?>" class="dropdown-toggle" data-id="<?php echo $product_group->id; ?>" data-toggle="dropdown"><?php echo $product_group->name; ?><b class="caret"></b></a>
           <ul class="dropdown-menu transparent">
             <?php foreach($categories as $category): ?>
             <li><a href="<?php echo BASE_URL.'products/?group='.$product_group->id.'&cat='.$category->id; ?>" data-id="<?php echo $category->id; ?>"><?php echo $category->name; ?></a></li>
