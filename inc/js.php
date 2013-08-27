@@ -1,11 +1,11 @@
 <!-- Le javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<script src="<?php echo BASE_URL; ?>fluid_files/jquery.js"></script>
+<script src="<?php echo BASE_URL; ?>js/jquery-migrate-1.2.1.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/cufon-yui.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>fluid_files/holder.js"></script>
 <script type="text/javascript"> Cufon.now(); </script>
-<script src="<?php echo BASE_URL; ?>fluid_files/jquery.js"></script>
-<script src="<?php echo BASE_URL; ?>js/jquery-migrate-1.2.1.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-transition.js"></script>
 <script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-alert.js"></script>
 <script src="<?php echo BASE_URL; ?>fluid_files/bootstrap-modal.js"></script>
@@ -81,9 +81,14 @@
 					$(this).parent().parent().find("a[rel^='prettyPhoto']")[0].click()
 				});
 				
-				$('body').on('mouseover', '.prod_colour_option', function(){
+				$('body').on('mouseenter', '.prod_colour_option', function(){
 					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("for") + '_' + $(this).attr("data-item-id").toLowerCase() + '_big.png');
 					$(this).parent().find(".specs").find("span[class=item_code]").html($(this).attr("data-item-code"));
+					Cufon.replace('.item_code', { fontFamily: 'GillSans-Cufon', fontSize: '10px' });
+			    });
+				$('body').on('mouseout', '.prod_colour_option', function(){
+					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("data-item-img") + '_big.png');
+					$(this).parent().find(".specs").find("span[class=item_code]").html($(this).attr("data-orig-code"));
 					Cufon.replace('.item_code', { fontFamily: 'GillSans-Cufon', fontSize: '10px' });
 			    });
     }); 

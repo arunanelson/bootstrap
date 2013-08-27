@@ -495,7 +495,7 @@
 				'left': ((windowWidth/2) - (pp_dimensions['containerWidth']/2) < 0) ? 0 : (windowWidth/2) - (pp_dimensions['containerWidth']/2) - 200,
 				width:pp_dimensions['containerWidth']
 			},settings.animation_speed,function(){
-				$pp_pic_holder.find('.pp_hoverContainer,#fullResImage').height(pp_dimensions['height']).width(pp_dimensions['width']);
+				//$pp_pic_holder.find('.pp_hoverContainer,#fullResImage').height(pp_dimensions['height']).width(pp_dimensions['width']);
 
 				$pp_pic_holder.find('.pp_fade').fadeIn(settings.animation_speed); // Fade the new content
 

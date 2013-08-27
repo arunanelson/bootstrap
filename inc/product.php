@@ -23,7 +23,7 @@
     <?php $colours = $product->getColours(); ?>
     <p class="prod_colours">COLOURS</p>
     <?php foreach($colours as $colour): ?>
-    <div class="prod_colour_option <?php echo "item_".$colour->name; ?>" data-item-id="<?php echo $colour->name; ?>" for="<?php echo $product->name; ?>" data-item-code="<?php echo $colour->code; ?>"></div>
+    <div class="prod_colour_option <?php echo "item_".$colour->name; ?>" data-item-img="<?php echo $product->pic; ?>" data-item-id="<?php echo $colour->name; ?>" for="<?php echo $product->name; ?>" data-item-code="<?php echo $colour->code; ?>" data-orig-code="<?php echo $specs->item_code; ?>"></div>
     <?php endforeach; ?>
     <div class="clearfix"></div>
     <?php endif; ?>

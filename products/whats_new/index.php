@@ -219,38 +219,8 @@
   <!--/.fluid-container--> 
 </div>
 <?php require_once("../../inc/js.php"); ?>
-<!-- To avoid delays, initialize Cufón before other scripts at the bottom --> 
 <script type="text/javascript" charset="utf-8">
-			var i = 0;
-			$(document).ready(function(){
-				
-				$('body').on('click', '#specs', function(){
-					
-					if(i == 0)
-					{
-						$(".summary").hide('slow');
-						$(".specs").show('slow');
-						$(this).text("View Details >>");
-						i = 1;
-					}
-					else
-					{
-						$(".specs").hide('slow');
-						$(".summary").show('slow');
-						$(this).text("View Specifications >>");
-						i = 0;
-					}
-			    });
-				
-				$("a[rel^='prettyPhoto']").prettyPhoto();
-				
-				$(".fav-product-heading").click(function(){
-					if($(this).attr("product") == "giove")
-						window.location = $(this).parent().parent().find("a").attr("href");
-					else
-					   $.prettyPhoto.open('<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("product") + '_big.png','',$(this).parent().parent().find("div[class=prod_description]").html());
-				});
-			});
-	</script>
+var i = 0;
+</script>
 </body>
 </html>
