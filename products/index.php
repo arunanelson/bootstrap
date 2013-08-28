@@ -4,7 +4,6 @@
 <?php
  $group = $_GET['group'];
  $cat = 0;
- 
  $prod_group = R::load('product_groups', $group);
  $pageTitle = $prod_group->name;
 

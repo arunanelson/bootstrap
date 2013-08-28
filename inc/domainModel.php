@@ -15,7 +15,7 @@ class Model_Product_Groups extends RedBean_SimpleModel {
 class Model_Product_Lines extends RedBean_SimpleModel {
         public function getProducts() {
             return R::find('products',
-            ' line_id = ? ',array(
+            ' line_id = ? order by `id` asc',array(
             $this->id));
         }
     }
