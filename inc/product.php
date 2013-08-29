@@ -11,11 +11,15 @@
     </ul>
     <ul class="prod_highlights specs">
       <?php $specs = reset($product->getSpecs()); ?>
-      <?php if($specs->cc_oz != NULL && $specs->cc_oz !='na'): ?>
+      <?php if($specs->cc_oz != NULL && $specs->cc_oz !='na'&& $specs->cc_oz !='n.a.'): ?>
       <li> <?php echo $specs->cc_oz; ?> oz - <?php echo $specs->cc_cl; ?> cl</li>
       <?php endif; ?>
+      <?php if($specs->h_inches != NULL && $specs->h_inches !='na'&& $specs->h_inches !='n.a.'): ?>
       <li> H <?php echo $specs->h_inches; ?> - <?php echo $specs->h_mm; ?> mm</li>
+      <?php endif; ?>
+      <?php if($specs->theta_i != NULL && $specs->theta_i !='na'&& $specs->theta_i !='n.a.'): ?>
       <li> Ø <?php echo $specs->theta_i; ?> - <?php echo $specs->theta_mm; ?> mm</li>
+      <?php endif; ?>
       <li> Item code: <span class="item_code"><?php echo $specs->item_code; ?></span></li>
       <li> Pack: <?php echo $specs->pack; ?> </li>
     </ul>
