@@ -42,9 +42,9 @@
   <?php endif; ?>
 </div>
 <?php if($product->alt_pic != NULL): ?>
-<a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>.png"/></a> <a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->alt_pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img style="display:none" src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->alt_pic; ?>.png"/></a>
+<a data-name="<?php echo $product->name ?>" data-set = "true" href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>.png"/></a> <a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->alt_pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img style="display:none" src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->alt_pic; ?>.png"/></a>
 <?php else: ?>
-<a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>.png"/></a>
+<a data-name="<?php echo $product->name ?>" data-set = "false" href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>.png"/></a>
 <?php endif; ?>
 <div><span class="fav-product-heading" product="<?php echo $product->pic; ?>"><?php echo $product->name; ?></span><br />
   <span class="fav-product-detail"><?php echo (($specs->cc_oz != NULL && $specs->cc_oz !='na') ? $specs->cc_oz. ' oz' : 'Ø '.$specs->theta_i); ?>

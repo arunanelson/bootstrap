@@ -27,7 +27,7 @@ while ($row = mysql_fetch_assoc ($res)) {
 if(!empty($results)) {
 	echo "<ul>";
 	for($i=0;$i<count($results);$i++){
-		$url = @str_ireplace("%s", urlencode($ids[$i]), $_GET['url']);
+		$url = @str_ireplace("%s", ($ids[$i]."#/".$results[$i]."/0/"), $_GET['url']);
 		echo "<li><img src='http://localhost:8080/bormiolirocco/bootstrap/img/catalog/".$pics[$i].".png'/><a href='".$url."' target='".$target."'>".str_ireplace($q, $q."<b>", $results[$i])."</b></a></li>";
 	}
 	echo "</ul>";

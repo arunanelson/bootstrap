@@ -27,7 +27,7 @@
 			wmode: 'opaque', /* Set the flash wmode attribute */
 			autoplay: true, /* Automatically start videos: True/False */
 			modal: false, /* If set to true, only the close button will close the window */
-			deeplinking: false, /* Allow prettyPhoto to update the url to enable deeplinking. */
+			deeplinking: true, /* Allow prettyPhoto to update the url to enable deeplinking. */
 			overlay_gallery: true, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
 			overlay_gallery_max: 30, /* Maximum number of pictures in the overlay gallery */
 			keyboard_shortcuts: true, /* Set to false if you open forms inside prettyPhoto */
@@ -122,6 +122,7 @@
 			
 			// Find out if the picture is part of a set
 			theRel = $(this).attr(settings.hook);
+			theName = $(this).attr('data-name');
 			galleryRegExp = /\[(?:.*)\]/;
 			isSet = (galleryRegExp.exec(theRel)) ? true : false;
 			
@@ -140,7 +141,6 @@
 			
 			if(settings.allow_resize)
 				$(window).bind('scroll.prettyphoto',function(){ _center_overlay(); });
-			
 			
 			$.prettyPhoto.open();
 			
@@ -859,9 +859,9 @@
 			
 			// Grab the rel index to trigger the click on the correct element
 			hashIndex = getHashtag();
-			hashRel = hashIndex;
-			hashIndex = hashIndex.substring(hashIndex.indexOf('/')+1,hashIndex.length-1);
-			hashRel = hashRel.substring(0,hashRel.indexOf('/'));
+			hashRel = "prettyPhoto["+ getNameHashtag() + "]";
+			//hashIndex = hashIndex.substring(hashIndex.indexOf('/')+1,hashIndex.length-1);
+			//hashRel = hashRel.substring(0,hashRel.indexOf('/'));
 
 			// Little timeout to make sure all the prettyPhoto initialize scripts has been run.
 			// Useful in the event the page contain several init scripts.
@@ -873,18 +873,30 @@
 	
 	function getHashtag(){
 		var url = location.href;
-		hashtag = (url.indexOf('#prettyPhoto') !== -1) ? decodeURI(url.substring(url.indexOf('#prettyPhoto')+1,url.length)) : false;
-
-		return hashtag;
+		var array_fragment = url.split('/');
+		var pg_url = array_fragment[array_fragment.length - 2]
+		//hashtag = (url.indexOf('#') !== -1) ? decodeURI(url.substring(array_fragment.length - 2,url.length)) : false;
+        //alert(pg_url);
+		return pg_url;
 	};
+	
+		function getNameHashtag(){
+		var url = location.href;
+		var array_fragment = url.split('/');
+		var pg_url = array_fragment[array_fragment.length - 3]
+		//hashtag = (url.indexOf('#') !== -1) ? decodeURI(url.substring(array_fragment.length - 2,url.length)) : false;
+        //alert(pg_url);
+		return pg_url;
+	};
+	
 	
 	function setHashtag(){
 		if(typeof theRel == 'undefined') return; // theRel is set on normal calls, it's impossible to deeplink using the API
-		location.hash = theRel + '/'+rel_index+'/';
+		location.hash = '/' + theName + '/'+rel_index+'/';
 	};
 	
 	function clearHashtag(){
-		if ( location.href.indexOf('#prettyPhoto') !== -1 ) location.hash = "prettyPhoto";
+		if ( location.href.indexOf('#') !== -1 ) location.hash = "";
 	}
 	
 	function getParam(name,url){
