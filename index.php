@@ -13,11 +13,7 @@
         <!-- Carousel
     ================================================== -->
         <div class="slider-wrapper theme-default">
-          <div id="slider" class="nivoSlider"> 
-              <img src="img/slides/slide-01.jpg" alt="" usemap="#01map"> 
-              <img src="img/slides/slide-03.jpg" alt="" usemap="#03map"> 
-              <img src="img/slides/slide-04.jpg" alt="" usemap="#04map"> 
-          </div>
+          <div id="slider" class="nivoSlider"> <img src="img/slides/slide-04.jpg" alt="" usemap="#04map"> <img src="img/slides/slide-01.jpg" alt="" usemap="#01map"> <img src="img/slides/slide-03.jpg" alt="" usemap="#03map"> </div>
           <div id="htmlcaption" class="nivo-html-caption"> <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. </div>
         </div>
         <map name="01map">

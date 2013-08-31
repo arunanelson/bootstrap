@@ -33,8 +33,8 @@
         <a href="#">Where to buy</a><br />
         <a href="#">Contact</a><br />
         <div class="clearfix"></div>
-        <div class="faceBookWhite"></div>
-        <div class="twitterWhite"></div>
+        <div class="faceBookWhite" title="FaceBook"></div>
+        <div class="twitterWhite" title="Twitter"></div>
       </div>
     </div>
     <div class="clearfix"></div>

@@ -17,7 +17,7 @@
             <span id="city">New York</span>
             <div id="address" class="m20t"> Bormioli Rocco Showroom<br>
               41 Madison Ave<br>
-              17th Floor<br>
+              16th &amp; 17th Floor<br>
               New York<br>
               NY, 10010</div>
             <div class="m5t"><span id="tel">Tel: (1) 212 719 0606</span><br>
@@ -47,7 +47,7 @@ $(function($){
 			'size' : 660,		
 			'tooltips' : 'floating',
 			'onClick' : function(e){
-				$("#city").text(e.text()); 
+				$("#city").text(e.attr('data-contact')); 
 				 $("#address").html("Bormioli Rocco Showroom<br>XX Lorem ipsum Ave<br>XXth Floor<br>" + e.text() + "<br>xx, xxxxx");
 				 $("#tel").text("Tel: (x) xxx xxx xxxx");
 				 Cufon.replace('.article_left', { fontFamily: 'GillSans-Cufon', fontSize: '14px' });

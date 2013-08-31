@@ -12,30 +12,35 @@
       <div class="span12">
         <div class="span3" id="pageTitle" title="Where to buy">WHERE TO BUY</div>
         <div id="salesWrapper">
-          <div class="article_left w200 m20t" id="sales">IN THE STORES</div>
+          <div class="article_left w150 m20t" id="sales">IN THE STORES</div>
           <div class="article_container">
             <div class="stores">
               <ul>
-                <li> Whole Foods </li>
-                <li> Bed Bath &amp; Beyond</li>
-                <li> The Container Store</li>
-                <li> Williams Sonoma</li>
-                <li> Whole Foods</li>
-                <li> Bed Bath &amp; Beyond</li>
-                <li> The Container Store</li>
-                <li> Williams Sonoma</li>
+                <li> Bed Bath &amp; Beyond &amp; BedBath&amp;Beyond.com</li>
+                <li> Container Store &amp; ContainerStore.com</li>
+                <li> Crate &amp; Barrel &amp; Crate&amp;Barrel.com</li>
+                <li> Williams Sonoma &amp; WilliamsSonoma.com</li>
+                <li> West Elm &amp; WestElm.com</li>
+                <li> Sur La Table &amp; SurlaTable.com</li>
+                <li> Bloomingdales &amp; Bloomingdales.com</li>
+                <li> Amazon.com</li>
+                <li> Target.com </li>
+                <li> Eataly</li>
               </ul>
             </div>
             <div class="stores">
-             <ul>
-                <li> Whole Foods </li>
-                <li> Bed Bath &amp; Beyond</li>
-                <li> The Container Store</li>
-                <li> Williams Sonoma</li>
-                <li> Whole Foods</li>
-                <li> Bed Bath &amp; Beyond</li>
-                <li> The Container Store</li>
-                <li> Williams Sonoma</li>
+              <ul>
+                <li> Macys.com</li>
+                <li> Wegmans</li>
+                <li> A Southern Season</li>
+                <li> BevMo!</li>
+                <li> Hobby Lobby</li>
+                <li> Meijer</li>
+                <li> Fresh Finds</li>
+                <li> Basics Plus</li>
+                <li> Chef's Catalog</li>
+                <li> Zabar's</li>
+                <li> ...and many other fine retailers</li>
               </ul>
             </div>
             <div class="clearfix"></div>

@@ -48,11 +48,10 @@ if(isset($_POST['submitted']))
               any questions about our products!</div>
             <div class="m5t">BORMIOLI ROCCO USA<br>
               41 Madison Ave<br>
-              17th Floor<br>
+              16th &amp; 17th Floor<br>
               New York<br>
               NY, 10010</div>
-            <div class="m5t">Tel: (1) 212 719 0606<br>
-              Email: <a class="red" href="maito:info@bormioliroccousa.com">info@bormioliroccousa.com</a></div>
+            <div class="m5t">Tel: (1) 212 719 0606</div>
             <div class="m5t">Like us on <a class="red" href="#">Facebook</a><br>
               Follow us on <a class="red" href="#">Twitter</a></div>
           </div>

@@ -102,10 +102,12 @@
 				{
 					window.location = '<?php echo BASE_URL; ?>who_we_are/' + $(this).attr("href");
 				}
+
 				$($(this).attr("href")).ScrollTo({
 						duration: 1000,
 						easing: 'easeInQuad'
-					});		
+					});	
+					window.location.hash = $(this).attr("href");	
 				});
 				$(".logo").click(function(){
 					window.location = "<?php echo BASE_URL; ?>";

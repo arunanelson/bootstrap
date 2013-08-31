@@ -29,14 +29,17 @@
             <li class="subItem"><a href="<?php echo BASE_URL; ?>where_to_buy/sales_network">Sales Network</a></li>
             <li class="subItem"><a href="<?php echo BASE_URL; ?>where_to_buy/stores">In the Stores</a></li>
             <li class="divider"></li>
-            <li><a href="#">Restaurants &amp; Hospitality</a></li>
-            <li><a href="#">Canada</a></li>
+            <li><a href="<?php echo BASE_URL; ?>where_to_buy/restaurant_and_hospitality">Restaurants &amp; Hospitality</a></li>
+            <li><a href="<?php echo BASE_URL; ?>where_to_buy/canada">Canada</a></li>
           </ul>
         </li>
         <li><a href="<?php echo BASE_URL; ?>contact">Contact</a></li>
+        <li><a href="<?php echo BASE_URL; ?>2013_US CATALOG_LR.pdf">Catalog</a></li>
       </ul>
-      <div id="faceBook"></div>
-      <div id="twitter"></div>
+      <div id="share">
+        <div id="faceBook" title="FaceBook"></div>
+        <div id="twitter" title="Twitter"></div>
+      </div>
       <div id="searchFrm" class="searchbox" onclick="$(this).find('input').focus();">
         <div> <a></a> <img src="<?php echo BASE_URL; ?>img/preloader.gif" border=0 id="ipreloader" />
           <form class="navbar-form pull-right">
