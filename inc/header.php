@@ -21,7 +21,18 @@
 <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
     <![endif]-->
+<script type="text/javascript">
 
+if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){ //test for MSIE x.x;
+ var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a number
+ if (ieversion<9)
+  document.write('<p class="container">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>');
+}
+else
+{
+ //document.write("n/a")
+}
+</script>
 <!-- Fav and touch icons -->
 <link rel="shortcut icon" href="favicon.ico" />
 </head>
