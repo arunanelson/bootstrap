@@ -23,11 +23,12 @@
       <li> Item code: <span class="item_code"><?php echo $specs->item_code; ?></span></li>
       <li> Pack: <?php echo $specs->pack; ?> </li>
     </ul>
-    <?php if($product->has_colours == 1): ?>
-    <?php $colours = $product->getColours(); ?>
+    <?php if($product->colours != NULL): ?>
+    <?php $colours = strpos($product->colours, ',') !== false  ? explode(",",$product->colours) : array($product->colours); ?>
+    <?php $coloursCount = count($colours); ?>
     <p class="prod_colours">COLOURS</p>
     <?php foreach($colours as $colour): ?>
-    <div class="prod_colour_option <?php echo "item_".$colour->name; ?>" data-item-img="<?php echo $product->pic; ?>" data-item-id="<?php echo $colour->name; ?>" for="<?php echo $product->name; ?>" data-item-code="<?php echo $colour->code; ?>" data-orig-code="<?php echo $specs->item_code; ?>"></div>
+    <div class="prod_colour_option <?php echo "item_".$colour; ?>" data-item-img="<?php echo $product->pic; ?>" data-item-id="<?php echo $colour; ?>" for="<?php echo (str_replace(" ", "-", $product->name)); ?>"></div>
     <?php endforeach; ?>
     <div class="clearfix"></div>
     <?php endif; ?>
@@ -37,7 +38,7 @@
   <?php if($specs->logos != NULL && $specs->logos !=''): ?>
   <?php $logos = explode(",", $specs->logos); ?>
   <?php foreach($logos as $logo): ?>
-  <img src="<?php echo BASE_URL."img/logos/".(trim($logo)).".png"; ?>" />
+  <img src="<?php echo BASE_URL."img/logos/".(trim($logo)).".png"; ?>" title="<?php echo trim($logo); ?>" />
   <?php endforeach; ?>
   <?php endif; ?>
 </div>
@@ -48,8 +49,8 @@
 <?php endif; ?>
 <div><span class="fav-product-heading" product="<?php echo $product->pic; ?>"><?php echo $product->name; ?></span><br />
   <span class="fav-product-detail"><?php echo (($specs->cc_oz != NULL && $specs->cc_oz !='na') ? $specs->cc_oz. ' oz' : 'Ø '.$specs->theta_i); ?>
-  <?php if($product->has_colours == 1){
-				  $coloursCount = count($colours);
-				  echo '• '.$coloursCount.'COLORS';
-				  } ?>
+  <?php if($product->colours != NULL){
+				  echo '• '.$coloursCount.' COLORS';
+				  } 
+					   ?>
   </span></div>

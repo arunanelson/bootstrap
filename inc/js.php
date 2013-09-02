@@ -54,7 +54,8 @@
 <script type="text/javascript" src="<?php echo BASE_URL; ?>js/helper-plugins/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="<?php echo BASE_URL; ?>js/helper-plugins/jquery.transit.min.js"></script>
 <script type="text/javascript" src="<?php echo BASE_URL; ?>js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
-<script type="text/javascript" src="<?php echo BASE_URL; ?>nivo-slider/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>nivo-slider/jquery.nivo.slider.js">
+</script><script src="<?php echo BASE_URL; ?>js/modernizr.custom.79241.js"></script>
 <script type="text/javascript">
     $(window).load(function() {
 		$("a[rel^='prettyPhoto']").prettyPhoto();
@@ -82,14 +83,10 @@
 				});
 				
 				$('body').on('mouseenter', '.prod_colour_option', function(){
-					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("for") + '_' + $(this).attr("data-item-id").toLowerCase() + '_big.png');
-					$(this).parent().find(".specs").find("span[class=item_code]").html($(this).attr("data-item-code"));
-					Cufon.replace('.item_code', { fontFamily: 'GillSans-Cufon', fontSize: '10px' });
+					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("for") + '_' + $(this).attr("data-item-id").toLowerCase() + '_big.png');;
 			    });
 				$('body').on('mouseout', '.prod_colour_option', function(){
 					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("data-item-img") + '_big.png');
-					$(this).parent().find(".specs").find("span[class=item_code]").html($(this).attr("data-orig-code"));
-					Cufon.replace('.item_code', { fontFamily: 'GillSans-Cufon', fontSize: '10px' });
 			    });
     }); 
 </script>

@@ -21,11 +21,6 @@ class Model_Product_Lines extends RedBean_SimpleModel {
     }
 	
 class Model_Products extends RedBean_SimpleModel {
-        public function getColours() {
-            return R::find('product_colours',
-            ' product_id = ? ',array(
-            $this->id));
-        }
 		 public function getSpecs() {
             return R::find('product_specs',
             ' id = ? ',array(

@@ -362,6 +362,28 @@ li.center img {
 .item_pink {
 	background-image: url(../img/pink.png);
 }
+
+.item_fuchsia {
+	background-image: url(../img/fuchsia.png);
+}
+.item_navy {
+	background-image: url(../img/navy.png);
+}
+.item_sky-blue {
+	background-image: url(../img/sky-blue.png);
+}
+.item_black {
+	background-image: url(../img/black.png);
+}
+.item_white {
+	background-image: url(../img/white.png);
+}
+.item_yellow {
+	background-image: url(../img/yellow.png);
+}
+.item_gray {
+	background-image: url(../img/gray.png);
+}
 .grey_line {
 	background-image: url(../img/grey_line.png);
 	background-repeat: no-repeat;
