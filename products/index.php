@@ -39,8 +39,8 @@
             <?php if(count($products) == 1 ): ?>
              <?php include "../inc/product.php"; ?>
             <?php else: ?>
-            <a href="<?php echo BASE_URL.'products/line/?id='.$product_line->id; ?>"> <img title="<?php echo $product_line->name; ?>" src="../img/catalog/<?php echo reset($products)->pic; ?>.png"/> </a>
-            <div><span class="fav-product-heading" title="<?php echo $product_line->name; ?>"><?php echo $product_line->name; ?></span></div>
+            <a href="<?php echo BASE_URL.'products/line/?id='.$product_line->id; ?>"> <img title="<?php echo ucwords(strtolower($product_line->name)); ?>" src="../img/catalog/<?php echo strtolower(reset($products)->pic); ?>.png"/> </a>
+            <div><span class="fav-product-heading" title="<?php echo ucwords(strtolower($product_line->name)); ?>"><?php echo ucwords(strtolower($product_line->name)); ?></span></div>
             <?php endif; ?>
           </div>
           <?php $index++; ?>

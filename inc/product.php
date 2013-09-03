@@ -26,9 +26,9 @@
     <?php if($product->colours != NULL): ?>
     <?php $colours = strpos($product->colours, ',') !== false  ? explode(",",$product->colours) : array($product->colours); ?>
     <?php $coloursCount = count($colours); ?>
-    <p class="prod_colours">COLOURS</p>
+    <p class="prod_colours">COLORS</p>
     <?php foreach($colours as $colour): ?>
-    <div class="prod_colour_option <?php echo "item_".$colour; ?>" data-item-img="<?php echo $product->pic; ?>" data-item-id="<?php echo $colour; ?>" for="<?php echo (str_replace(" ", "-", $product->name)); ?>"></div>
+    <div class="prod_colour_option <?php echo "item_".$colour; ?>" data-item-img="<?php echo $product->pic; ?>" data-item-id="<?php echo $colour; ?>" for="<?php echo (str_replace(" ", "-", strtolower($product->name))); ?>"></div>
     <?php endforeach; ?>
     <div class="clearfix"></div>
     <?php endif; ?>
@@ -43,11 +43,12 @@
   <?php endif; ?>
 </div>
 <?php if($product->alt_pic != NULL): ?>
-<a data-name="<?php echo $product->name ?>" data-set = "true" href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>.png"/></a> <a href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->alt_pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img style="display:none" src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->alt_pic; ?>.png"/></a>
+<a data-name="<?php echo $product->name ?>" data-set = "true" href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>.png"/></a> 
+<a href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->alt_pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img style="display:none" src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->alt_pic); ?>.png"/></a>
 <?php else: ?>
-<a data-name="<?php echo $product->name ?>" data-set = "false" href="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo $product->pic; ?>.png"/></a>
+<a data-name="<?php echo $product->name ?>" data-set = "false" href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>.png"/></a>
 <?php endif; ?>
-<div><span class="fav-product-heading" product="<?php echo $product->pic; ?>"><?php echo $product->name; ?></span><br />
+<div><span class="fav-product-heading" product="<?php echo strtolower($product->pic); ?>"><?php echo ucwords(strtolower($product->name)); ?></span><br />
   <span class="fav-product-detail"><?php echo (($specs->cc_oz != NULL && $specs->cc_oz !='na') ? $specs->cc_oz. ' oz' : 'Ø '.$specs->theta_i); ?>
   <?php if($product->colours != NULL){
 				  echo '• '.$coloursCount.' COLORS';

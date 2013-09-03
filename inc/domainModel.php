@@ -7,7 +7,7 @@ R::setup('mysql:host=localhost;dbname=bormiolirocco','root','admin');
 class Model_Product_Groups extends RedBean_SimpleModel {
         public function getCategories() {
             return R::find('categories',
-            ' product_group_id = ? ',array(
+            ' product_group_id = ? order by `id` asc',array(
             $this->id));
         }
     }

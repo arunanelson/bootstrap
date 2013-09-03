@@ -46,7 +46,7 @@
 		Cufon.replace('.fav-product-detail', { fontFamily: 'GillSans-Cufon' });
 	    Cufon.replace('#city', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
 	    Cufon.replace('#thank-you', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
-		Cufon.replace('#sales', { fontFamily: 'GillSans-Cufon', fontSize: '18px', fontWeight: 'bold' });
+		Cufon.replace('#sales', { fontFamily: 'GillSans-Cufon', fontSize: '19px', fontWeight: 'bold' });
 
     </script>
 <!-- optionally include helper plugins -->
