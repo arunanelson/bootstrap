@@ -4,6 +4,14 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
  filter: progid:DXImageTransform.Microsoft. AlphaImageLoader(src=hIEfix.png, sizingMethod=crop);
 }
+#careAbout {
+	border-bottom: 1px solid #282828;
+	width: 160px
+}
+#workWith {
+	border-bottom: 1px solid #282828;
+	width: 210px
+}
 #share {
 	position: absolute;
 	top: -50px;
@@ -706,6 +714,6 @@ h3 {
 	font-weight: bold;
 	font-style: italic
 }
-.bigger{
+.bigger {
 	font-size: 16px;
 }

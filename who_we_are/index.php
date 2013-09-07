@@ -140,14 +140,26 @@
         </div>
         <div class="about_copy">
           <div class="article_title w310">Bormioli Rocco North America</div>
-          <div class="article_body w640 fleft">Ea commodo consequat duis autem vel eum 
-            iriure dolor in hendrerit in vulputate? Dignissim qui blandit, praesent 
-            luptatum zzril delenit augue duis dolore te feugait. Quam nunc putamus 
-            parum claram anteposuerit litterarum formas humanitatis, per seacula quarta decima? 
-            Lectores legere me lius quod, ii legunt saepius claritas? Exerci tation ullamcorper 
-            suscipit lobortis nisl ut aliquip ex velit esse molestie? Demonstraverunt est 
-            etiam processus dynamicus qui sequitur mutationem consuetudium lectorum mirum est 
-            notare quam. Laoreet dolore magna aliquam erat volutpat ut wisi enim ad minim veniam quis nostrud! </div>
+          <div class="article_body w640 fleft">
+            <p>Based in the heart of Manhattan, on the edge of the beautiful and historic 
+              Madison Square Park, our offices are perched on the 16th and 17th floors of 41 Madison Ave with striking and 
+              inspiring views of the Empire State Building. </p>
+            <p>Our North American business is fueled by our Italian heritage but also the energy & heartbeat of New York...
+              It's the people, the diversity & food, and the wine culture.</p>
+            <p>Our team comes from all walks of life… while most of us are originally from New York some are Italian natives (Ciao!). 
+              Our primary language is English but we also speak Italian, French, German, Spanish and Mandarin. 
+              We are a diverse and eclectic group of people: some of us prefer outdoor activities and sports; some are travelers, 
+              movie and art lovers, shopaholics and social media fanatics.</p>
+            <p>As you might imagine food and wine is very important to us. We love high quality food and drinks, 
+              the stories behind it and the places where it comes from. What we love about food is its capacity to 
+              bring people together around a dinner table and share a different experience every time. For obvious 
+              reasons we all love Italian food (wine and gelato, anyone?) but we're across the board from tacos to sushi and Spanish tapas. 
+              For the same reasons we are all obsessed by using the right glass for our favorite drink and we never make a mistake when it 
+              comes to choosing the right shape for our favorite red wine. For us foodies it's very hard to stay fit but
+              we try our best (yes, we do!)!</p>
+            <p>One of the reasons we love working at Bormioli Rocco is the people as well as having the possibility to 
+              experience an everyday mix of American and Italian culture.</p>
+          </div>
         </div>
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
@@ -157,15 +169,19 @@
         </div>
         <div class="about_copy">
           <div class="article_body w640 fleft">
-            <p>Ea commodo consequat duis autem vel eum 
-              iriure dolor in hendrerit in vulputate? Dignissim qui blandit, praesent 
-              luptatum zzril delenit augue duis dolore te feugait. Quam nunc putamus parum claram 
-              anteposuerit litterarum formas humanitatis, per seacula quarta decima? 
-              Lectores legere me lius quod, ii legunt saepius claritas? Exerci tation 
-              ullamcorper suscipit lobortis nisl ut aliquip ex velit esse molestie? 
-              Demonstraverunt est etiam processus dynamicus qui sequitur mutationem 
-              consuetudium lectorum mirum est notare quam. Laoreet dolore magna aliquam erat 
-              volutpat ut wisi enim ad minim veniam quis nostrud!</p>
+            <p id="careAbout">What We Care About:</p>
+            <ul>
+              <li><strong>Cookies for Kids Cancer</strong> is a non-profit  foundation committed to raising funds for  research to develop new, improved treatments for pediatric cancer, the #1  disease killer of children in the U.S., by hosting local events of all shapes  and sizes - from collecting change to 5Ks to community-wide bake sales.</li>
+              <li><strong>The Pink Agenda </strong>is  a not-for-profit org committed to raising funds for breast cancer care,  research &amp; awareness of the disease among young professionals.  The Pink Agenda mission is to increase the  awareness and activism of young people, primarily aged 25-35, in the battle  against breast cancer.</li>
+            </ul>
+            <p id="workWith">Who We Like To Work With:</p>
+            <ul>
+              <li><strong>Eataly </strong>is<strong> </strong>the largest artisanal Italian food and  wine marketplace in the world and New York City's ultimate destination for food  lovers to shop and taste and savor. Eataly experience is based on three steps:  eat, shop and learn. </li>
+              <li><strong>Edible Magazine  </strong>is a local publication that celebrates local food culture season  by season focusing on the people (farmers, fishers, chefs, food artisans) and targeting  young men and women who enjoy food, beer &amp; wine, cooking and entertaining  at home.</li>
+              <li><strong>Gather Journal , </strong>the  recent James Beard Award winner, is a bi-annual recipe-driven food magazine  devoted not just to cooking and eating, but to what those acts inspire: the  bringing of people together.</li>
+              <li><strong>Saveur - </strong>a magazine  for people who experience the world through authentic cuisine. Saveur's mission  is  to explore and celebrate the world of  food, no matter if it's a barbecue stand in South Carolina or a twenty-course  meal in Rome or simple street food Thailand.</li>
+              <li><strong>AIS (Italian Sommeliers Association) -  </strong>founded  in 1965, trains professional sommeliers and promotes the culture of good wine,  food and Italian and international wine producers. Bormioli Rocco is AIS  exclusive glassware provider. In 2011 the Italian Sommelier Association was  looking for a technical wine tasting glass that meets the new design trends and  Bormioli Rocco decided to take up the challenge with a designer working  together with the sommeliers to develop a wine tasting glass – Tre Sensi - that  takes the enjoyment of wine to the next level!</li>
+            </ul>
           </div>
         </div>
         <div class="clearfix"></div>
