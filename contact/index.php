@@ -29,6 +29,7 @@ if(isset($_POST['submitted']))
         $formproc->RedirectToURL("thank-you");
    }
 }
+$pageTitle = "Contact Us";
 ?>
 <!DOCTYPE html>
 <html lang="en">

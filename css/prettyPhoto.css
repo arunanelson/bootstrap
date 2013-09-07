@@ -32,7 +32,7 @@
 	div.pp_default .pp_content .ppt { color: #f8f8f8; }
 	div.pp_default .pp_content_container .pp_left { background: url(../img/prettyPhoto/default/sprite_y.png) -7px 0 repeat-y; padding-left: 13px; }
 	div.pp_default .pp_content_container .pp_right { background: url(../img/prettyPhoto/default/sprite_y.png) top right repeat-y; padding-right: 13px; }
-	div.pp_default .pp_content { 	background-image: url(../img/bg.png); width: 750px !important; height:455px !important; } /* Content background */
+	div.pp_default .pp_content { 	background-image: url(../img/bg.png); width: 790px !important; height:455px !important; } /* Content background */
 	div.pp_default .pp_next:hover { background: url(../img/prettyPhoto/default/sprite_next.png) center right  no-repeat; cursor: pointer; } /* Next button */
 	div.pp_default .pp_previous:hover { background: url(../img/prettyPhoto/default/sprite_prev.png) center left no-repeat; cursor: pointer; } /* Previous button */
 	div.pp_default .pp_expand { background: url(../img/prettyPhoto/default/sprite.png) 0 -29px no-repeat; cursor: pointer; width: 28px; height: 28px; } /* Expand button */
@@ -50,7 +50,7 @@
 	div.pp_default .pp_nav .pp_play,
 	div.pp_default .pp_nav .pp_pause { background: url(../img/prettyPhoto/default/sprite.png) -51px 1px no-repeat; height:30px; width:30px; }
 	div.pp_default .pp_nav .pp_pause { background-position: -51px -29px; }
-	div.pp_default .pp_details { position: absolute; background-color:#33312f; top:-5px; left:295px; width:460px !important; height:455px !important }
+	div.pp_default .pp_details { position: absolute; background-color:#33312f; top:-5px; left:295px; width:500px !important; height:455px !important }
 	div.pp_default a.pp_arrow_previous,
 	div.pp_default a.pp_arrow_next { background: url(../img/prettyPhoto/default/sprite.png) -31px -3px no-repeat; height: 20px; margin: 4px 0 0 0; width: 20px; }
 	div.pp_default a.pp_arrow_next { left: 52px; background-position: -82px -3px; } /* The next arrow in the bottom nav */
@@ -369,7 +369,7 @@
 		.pp_hoverContainer {
 			position: absolute;
 			top: 200px;
-			left: 80px;
+			left: 5px;
 			width: 100%;
 			z-index: 2000;
 		}

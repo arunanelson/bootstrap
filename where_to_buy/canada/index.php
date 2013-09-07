@@ -1,6 +1,7 @@
 <?php require_once("../../inc/domainModel.php");?>
 <!DOCTYPE html>
 <html lang="en">
+<?php $pageTitle = "Where to Buy | Canada"; ?>
 <?php require_once("../../inc/header.php");?>
 <body>
 <div class="container outercontainer shadow">

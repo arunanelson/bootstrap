@@ -47,6 +47,7 @@
 	    Cufon.replace('#city', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
 	    Cufon.replace('#thank-you', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
 		Cufon.replace('#sales', { fontFamily: 'GillSans-Cufon', fontSize: '19px' });
+		Cufon.replace('.bigger', { fontFamily: 'GillSans-Cufon', fontSize: '16px' });
 
     </script>
 <!-- optionally include helper plugins -->

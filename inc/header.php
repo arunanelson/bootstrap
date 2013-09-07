@@ -1,7 +1,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Dinnerware tableware, Glassware, Food storage - BORMIOLI ROCCO GLASS CO.INC.</title>
+<title><?php echo !empty($pageTitle) ? $pageTitle." | BORMIOLI ROCCO GLASS CO.INC" : "Dinnerware tableware, Glassware, Food storage - BORMIOLI ROCCO GLASS CO.INC"; ?></title>
 <meta name="description" content="">
 <meta name="author" content="Aruna Nelson - arunanelson@hotmail.com">
 
@@ -35,5 +35,5 @@ else
 }
 </script>
 <!-- Fav and touch icons -->
-<link rel="shortcut icon" href="favicon.ico" />
+<link rel="shortcut icon" href="<?php echo BASE_URL; ?>favicon.ico" />
 </head>

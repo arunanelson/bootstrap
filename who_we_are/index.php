@@ -1,6 +1,7 @@
 <?php require_once("../inc/domainModel.php");?>
 <!DOCTYPE html>
 <html lang="en">
+<?php $pageTitle = "About Us"; ?>
 <?php require_once("../inc/header.php");?>
 <body>
 <div class="container outercontainer shadow" id="top">
@@ -178,31 +179,31 @@
             <li> Headquarters: Fidenza, Italy. Founded in Italy over 1,300 years ago. 9 factories in Europe, over 2,500 employees.</li>
             <li> 4 Business units:
               <ul>
-                <li>1.	Tableware Glass - Market share: 50% share in Italian Mass Market retail sales of tableware, 25% in department and specialized stores.</li>
-                <li>2.	Food and Beverage Glass - Niche food market: bottles and jars for Nutella, Ferrero, Molinari Sambuca among others. </li>
-                <li>3.	Pharmaceuticals Glass and Plastic - 65% market share glass in Italy, 40% in plastic childproof caps.</li>
-                <li>4.	Perfume and Cosmetics Plastic - 12-15% of the entire EU market. Customers include L'Oreal, Clarins, Armani, BVLGARI, Louis Vuitton and Yves Rocher.</li>
+                <li><span class="boldItalic bigger">1.	Tableware Glass</span> - Market share: 50% share in Italian Mass Market retail sales of tableware, 25% in department and specialized stores.</li>
+                <li><span class="boldItalic bigger">2.	Food and Beverage Glass</span> - Niche food market: bottles and jars for Nutella, Ferrero, Molinari Sambuca among others. </li>
+                <li><span class="boldItalic bigger">3.	Pharmaceuticals Glass and Plastic</span> - 65% market share glass in Italy, 40% in plastic childproof caps.</li>
+                <li><span class="boldItalic bigger">4.	Perfume and Cosmetics Plastic</span> - 12-15% of the entire EU market. Customers include L'Oreal, Clarins, Armani, BVLGARI, Louis Vuitton and Yves Rocher.</li>
               </ul>
             </li>
             <li> Plant Production in 2011
               <ul>
-                <li> Fidenza, Italy: 123 million glass tableware items</li>
-                <li>Altare, Italy: 224 million glass tableware items</li>
-                <li>Azuqueca, Spain: 136 million glass tableware items</li>
-                <li>Bergantino, Italy: 1,550 million glass pharmaceutical bottles</li>
-                <li>Castelguelfo, Italy: 534 million pharmaceutical plastic bottles</li>
-                <li>Rivanazzano, Italy: 2,134 million pharmaceutical plastic bottles</li>
-                <li>Saint-Sulice, France: 292 million plastic pharmaceutical bottles</li>
-                <li>Trezzano, Italy: 379 million glass food and beverage bottles</li>
-                <li>Masniers, France: 219 million glass perfume and cosmetic bottles</li>
+                <li> <span class="boldItalic bigger">Fidenza, Italy</span>: 123 million glass tableware items</li>
+                <li> <span class="boldItalic bigger">Altare, Italy</span>: 224 million glass tableware items</li>
+                <li> <span class="boldItalic bigger">Azuqueca, Spain</span>: 136 million glass tableware items</li>
+                <li> <span class="boldItalic bigger">Bergantino, Italy</span>: 1,550 million glass pharmaceutical bottles</li>
+                <li> <span class="boldItalic bigger">Castelguelfo, Italy</span>: 534 million pharmaceutical plastic bottles</li>
+                <li> <span class="boldItalic bigger">Rivanazzano, Italy</span>: 2,134 million pharmaceutical plastic bottles</li>
+                <li> <span class="boldItalic bigger">Saint-Sulice, France</span>: 292 million plastic pharmaceutical bottles</li>
+                <li> <span class="boldItalic bigger">Trezzano, Italy</span>: 379 million glass food and beverage bottles</li>
+                <li> <span class="boldItalic bigger">Masniers, France</span>: 219 million glass perfume and cosmetic bottles</li>
               </ul>
             <li> The Five Types of Bormioli Rocco Glass
               <ul>
-                <li> <span class="boldItalic">Soda Lime Glass:</span> Created from sand, soda and calcium, it is the most common type of glass. Typically used in wine bottles, food jars and pharmaceutical bottles. </li>
-                <li> <span class="boldItalic">Star Glass:</span> the Bormioli Rocco exclusive crystal glass, known as non-lead "Crystal" because if its bright clear color, it is the perfect glass for wine.</li>
-                <li> <span class="boldItalic">Tempered Glass:</span> Glass that is subjected to a quick cooling process that actually realigns the molecules to produce a glass of superior strength. </li>
-                <li> <span class="boldItalic">Opal Glass:</span> White tempered glass used for dinnerware. </li>
-                <li> <span class="boldItalic">Porcelain Glass:</span> Another tempered, opaque glass used for dinnerware, lightweight and durable. </li>
+                <li> <span class="boldItalic bigger">Soda Lime Glass:</span> Created from sand, soda and calcium, it is the most common type of glass. Typically used in wine bottles, food jars and pharmaceutical bottles. </li>
+                <li> <span class="boldItalic bigger">Star Glass:</span> the Bormioli Rocco exclusive crystal glass, known as non-lead "Crystal" because if its bright clear color, it is the perfect glass for wine.</li>
+                <li> <span class="boldItalic bigger">Tempered Glass:</span> Glass that is subjected to a quick cooling process that actually realigns the molecules to produce a glass of superior strength. </li>
+                <li> <span class="boldItalic bigger">Opal Glass:</span> White tempered glass used for dinnerware. </li>
+                <li> <span class="boldItalic bigger">Porcelain Glass:</span> Another tempered, opaque glass used for dinnerware, lightweight and durable. </li>
               </ul>
             </li>
             <li> Two methods for coloring glass: spray the color on the glass and add the color to the hot mixture before the glass is formed.</li>

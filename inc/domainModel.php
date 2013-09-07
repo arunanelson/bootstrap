@@ -26,5 +26,10 @@ class Model_Products extends RedBean_SimpleModel {
             ' id = ? ',array(
             $this->spec_id));
         }
+		public function getLine() {
+            return R::find('product_lines',
+            ' id = ? ',array(
+            $this->line_id));
+        }
     }
 ?>

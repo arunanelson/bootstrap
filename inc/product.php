@@ -38,7 +38,10 @@
   <?php if($specs->logos != NULL && $specs->logos !=''): ?>
   <?php $logos = explode(",", $specs->logos); ?>
   <?php foreach($logos as $logo): ?>
-  <img src="<?php echo BASE_URL."img/logos/".(trim($logo)).".png"; ?>" title="<?php echo trim($logo); ?>" />
+  <?php //Convert whitespaces and underscore to dash
+    $logoImg = preg_replace("/[\s_]/", "-", (trim(strtolower($logo))));
+   ?>
+  <img src="<?php echo BASE_URL."img/logos/".$logoImg.".png"; ?>" title="<?php echo trim($logo); ?>" />
   <?php endforeach; ?>
   <?php endif; ?>
 </div>
@@ -49,7 +52,7 @@
 <a data-name="<?php echo $product->name ?>" data-set = "false" href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>.png"/></a>
 <?php endif; ?>
 <div><span class="fav-product-heading" product="<?php echo strtolower($product->pic); ?>"><?php echo ucwords(strtolower($product->name)); ?></span><br />
-  <span class="fav-product-detail"><?php echo (($specs->cc_oz != NULL && $specs->cc_oz !='na') ? $specs->cc_oz. ' oz' : 'Ø '.$specs->theta_i); ?>
+  <span class="fav-product-detail"><?php if(!empty($product->description)){echo strtoupper($product->description);} else{ echo (($specs->cc_oz != NULL && $specs->cc_oz !='na') ? $specs->cc_oz. ' oz' : 'Ø '.$specs->theta_i);} ?>
   <?php if($product->colours != NULL){
 				  echo '• '.$coloursCount.' COLORS';
 				  } 

@@ -674,7 +674,7 @@
 
 				$pp_pic_holder.css({
 					'top': projectedTop + 109,
-					'left': (windowWidth/2) + scroll_pos['scrollLeft'] - (contentwidth/2) - 107
+					'left': (windowWidth/2) + scroll_pos['scrollLeft'] - (contentwidth/2)
 				});
 			};
 		};
