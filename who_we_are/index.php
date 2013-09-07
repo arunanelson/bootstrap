@@ -198,11 +198,11 @@
               </ul>
             <li> The Five Types of Bormioli Rocco Glass
               <ul>
-                <li> Soda Lime Glass: Created from sand, soda and calcium, it is the most common type of glass. Typically used in wine bottles, food jars and pharmaceutical bottles. </li>
-                <li>Star Glass: the Bormioli Rocco exclusive crystal glass, known as non-lead "Crystal" because if its bright clear color, it is the perfect glass for wine.</li>
-                <li>Tempered Glass: Glass that is subjected to a quick cooling process that actually realigns the molecules to produce a glass of superior strength. </li>
-                <li> Opal Glass: White tempered glass used for dinnerware. </li>
-                <li> Porcelain Glass: Another tempered, opaque glass used for dinnerware, lightweight and durable. </li>
+                <li> <span class="boldItalic">Soda Lime Glass:</span> Created from sand, soda and calcium, it is the most common type of glass. Typically used in wine bottles, food jars and pharmaceutical bottles. </li>
+                <li> <span class="boldItalic">Star Glass:</span> the Bormioli Rocco exclusive crystal glass, known as non-lead "Crystal" because if its bright clear color, it is the perfect glass for wine.</li>
+                <li> <span class="boldItalic">Tempered Glass:</span> Glass that is subjected to a quick cooling process that actually realigns the molecules to produce a glass of superior strength. </li>
+                <li> <span class="boldItalic">Opal Glass:</span> White tempered glass used for dinnerware. </li>
+                <li> <span class="boldItalic">Porcelain Glass:</span> Another tempered, opaque glass used for dinnerware, lightweight and durable. </li>
               </ul>
             </li>
             <li> Two methods for coloring glass: spray the color on the glass and add the color to the hot mixture before the glass is formed.</li>

@@ -36,11 +36,11 @@
         <li><a href="<?php echo BASE_URL; ?>contact">Contact</a></li>
         <li><a href="<?php echo BASE_URL; ?>2013_US CATALOG_LR.pdf">Catalog</a></li>
       </ul>
-      <div id="share">
-        <div id="faceBook" title="FaceBook"></div>
-        <div id="twitter" title="Twitter"></div>
-      </div>
       <div id="searchFrm" class="searchbox" onclick="$(this).find('input').focus();">
+        <div id="share">
+          <div id="faceBook" title="FaceBook"></div>
+          <div id="twitter" title="Twitter"></div>
+        </div>
         <div> <a></a> <img src="<?php echo BASE_URL; ?>img/preloader.gif" border=0 id="ipreloader" />
           <form class="navbar-form pull-right">
             <input id="iSearch" class="span2" type="text" name="q" autocomplete="off" placeholder="Search">

@@ -45,7 +45,8 @@
 $(function($){
 	$("#map").load("../../inc/list-usa.html", function(){
 		 $('#map-usa').cssMap({
-			'size' : 660,		
+			'size' : 660,
+			'cities' : true,		
 			'tooltips' : 'floating',
 			'onClick' : function(e){
 				$("#city").text(e.text()); 

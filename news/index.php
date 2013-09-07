@@ -16,7 +16,7 @@
           <div class="article_container">
             <div class="article_title w180">News Article Title</div>
             <div class="article_date">Article Date</div>
-            <div class="article_body w600"> Quod ii legunt saepius claritas est etiam processus 
+            <div class="article_body w600"> <p>Quod ii legunt saepius claritas est etiam processus 
               dynamicus qui sequitur mutationem. Doming id quod mazim placerat facer 
               possim assum typi non habent claritatem insitam. Nihil imperdiet est usus 
               legentis in iis qui facit eorum claritatem Investigationes demonstraverunt. 
@@ -25,7 +25,7 @@
               Lius consuetudium lectorum mirum est notare quam littera gothica, quam nunc putamus. 
               Congue lectores legere me parum claram anteposuerit litterarum formas humanitatis 
               per seacula quarta decima? Zzril delenit augue duis dolore te: 
-              feugait nulla facilisi nam liber tempor? </div>
+              feugait nulla facilisi nam liber tempor?</p> </div>
           </div>
         </div>
         <div class="clearfix"></div>

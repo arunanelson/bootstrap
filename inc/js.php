@@ -20,7 +20,7 @@
 <!-- include jQuery + carouFredSel plugin -->
 <script type="text/javascript" src="<?php echo BASE_URL; ?>js/jquery.carouFredSel-6.2.1-packed.js"></script>
 <script src="<?php echo BASE_URL; ?>js/BodoniBook-Cufon_italic_400.font.js" type="text/javascript"></script>
-<script src="<?php echo BASE_URL; ?>js/GillSans-Cufon_500.font.js" type="text/javascript"></script>
+<script src="<?php echo BASE_URL; ?>js/GillSans-Cufon_500-GillSans-Cufon_500-GillSans-Cufon_italic_500-GillSans-Cufon_italic_500.font.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/jquery.cssmap.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/jquery-scrollto.js" type="text/javascript"></script>
@@ -28,8 +28,8 @@
 <script src="<?php echo BASE_URL; ?>js/isuggest.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/gen_validatorv31.js" type="text/javascript"></script>
 <script type="text/javascript">
-        Cufon.replace('#favHeader', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
-		Cufon.replace('#pageTitle', { fontFamily: 'GillSans-Cufon', fontWeight: 'bold' });
+        Cufon.replace('#favHeader', { fontFamily: 'GillSans-Cufon' });
+		Cufon.replace('#pageTitle', { fontFamily: 'GillSans-Cufon' });
         Cufon.replace('.footer-text a', { fontFamily: 'GillSans-Cufon' });
         Cufon.replace('.footer-bottom', { fontFamily: 'GillSans-Cufon' });
         Cufon.replace('.navi a', { fontFamily: 'GillSans-Cufon' });
