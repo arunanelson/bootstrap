@@ -20,7 +20,7 @@
 <!-- include jQuery + carouFredSel plugin -->
 <script type="text/javascript" src="<?php echo BASE_URL; ?>js/jquery.carouFredSel-6.2.1-packed.js"></script>
 <script src="<?php echo BASE_URL; ?>js/BodoniBook-Cufon_italic_400.font.js" type="text/javascript"></script>
-<script src="<?php echo BASE_URL; ?>js/GillSans-Cufon_500-GillSans-Cufon_500-GillSans-Cufon_italic_500-GillSans-Cufon_italic_500.font.js" type="text/javascript"></script>
+<script src="<?php echo BASE_URL; ?>js/GillSans.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/jquery.cssmap.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="<?php echo BASE_URL; ?>js/jquery-scrollto.js" type="text/javascript"></script>
@@ -46,7 +46,7 @@
 		Cufon.replace('.fav-product-detail', { fontFamily: 'GillSans-Cufon' });
 	    Cufon.replace('#city', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
 	    Cufon.replace('#thank-you', { fontFamily: 'BodoniBook-Cufon', fontSize: '28px', fontWeight: 'bold' });
-		Cufon.replace('#sales', { fontFamily: 'GillSans-Cufon', fontSize: '19px', fontWeight: 'bold' });
+		Cufon.replace('#sales', { fontFamily: 'GillSans-Cufon', fontSize: '19px' });
 
     </script>
 <!-- optionally include helper plugins -->
@@ -63,16 +63,16 @@
 					
 					if(i == 0)
 					{
-						$(".summary").hide('slow');
-						$(".specs").show('slow');
+						$(".summary").hide();
+						$(".specs").show();
 						Cufon.replace('.specs', { fontFamily: 'GillSans-Cufon', fontSize: '10px' }); 
 						$(this).text("View Details >>");
 						i = 1;
 					}
 					else
 					{
-						$(".specs").hide('slow');
-						$(".summary").show('slow');
+						$(".specs").hide();
+						$(".summary").show();
 						$(this).text("View Specifications >>");
 						i = 0;
 					}
