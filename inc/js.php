@@ -111,7 +111,9 @@
 					window.location = "<?php echo BASE_URL; ?>";
 					});
 				$('#iSearch').iSuggest({ url: '<?php echo BASE_URL; ?>inc/results/mysql_suggestions_results.php'});
-                $('#flip').carouFredSel({
+                if($('#flip'))
+				{
+					$('#flip').carouFredSel({
                     auto: false,
                     width: 960,
                     height: 250,
@@ -128,7 +130,8 @@
                         onMouse: true,
                         onTouch: true
                     }
-                });
+                  });
+				}
             })
         }(window.jQuery)
  </script>

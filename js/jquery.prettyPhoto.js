@@ -568,10 +568,10 @@
 			
 				while (!fitting){
 					if((pp_containerWidth > windowWidth)){
-						imageWidth = (windowWidth - 200);
+						imageWidth = (windowWidth);
 						imageHeight = (height/width) * imageWidth;
 					}else if((pp_containerHeight > windowHeight)){
-						imageHeight = (windowHeight - 200);
+						imageHeight = (windowHeight);
 						imageWidth = (width/height) * imageHeight;
 					}else{
 						fitting = true;
@@ -637,7 +637,7 @@
 			pp_contentHeight = height + detailsHeight;
 			pp_contentWidth = width;
 			pp_containerHeight = pp_contentHeight + titleHeight + $pp_pic_holder.find('.pp_top').height() + $pp_pic_holder.find('.pp_bottom').height();
-			pp_containerWidth = width;
+			pp_containerWidth = width + 150;
 		}
 	
 		function _getFileType(itemSrc){
@@ -690,7 +690,7 @@
 		};
 	
 		function _resize_overlay() {
-			windowHeight = $(window).height(), windowWidth = $(window).width();
+			windowHeight = $(window).height(), windowWidth = $(window).width() - 200;
 			
 			if(typeof $pp_overlay != "undefined") $pp_overlay.height($(document).height()).width(windowWidth);
 		};
