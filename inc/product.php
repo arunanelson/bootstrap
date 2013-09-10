@@ -23,7 +23,7 @@
       <li> Item code: <span class="item_code"><?php echo $specs->item_code; ?></span></li>
       <li> Pack: <?php echo $specs->pack; ?> </li>
     </ul>
-    <?php if($product->colours != NULL): ?>
+    <?php if($product->colours != NULL && empty($product->description)): ?>
     <?php $colours = strpos($product->colours, ',') !== false  ? explode(",",$product->colours) : array($product->colours); ?>
     <?php $coloursCount = count($colours); ?>
     <p class="prod_colours">COLORS</p>
@@ -53,7 +53,7 @@
 <?php endif; ?>
 <div><span class="fav-product-heading" product="<?php echo strtolower($product->pic); ?>"><?php echo ucwords(strtolower($product->name)); ?></span><br />
   <span class="fav-product-detail"><?php if(!empty($product->description)){echo strtoupper($product->description);} else{ echo (($specs->cc_oz != NULL && $specs->cc_oz !='na') ? $specs->cc_oz. ' oz' : 'Ø '.$specs->theta_i);} ?>
-  <?php if($product->colours != NULL){
+  <?php if($product->colours != NULL && empty($product->description)){
 				  echo '• '.$coloursCount.' COLORS';
 				  } 
 					   ?>

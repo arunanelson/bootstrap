@@ -222,8 +222,8 @@
                 <li> <span class="boldItalic bigger">Porcelain Glass:</span> Another tempered, opaque glass used for dinnerware, lightweight and durable. </li>
               </ul>
             </li>
-            <li> Two methods for coloring glass: spray the color on the glass and add the color to the hot mixture before the glass is formed.</li>
-            <li> Tre Sensi:  Bormioli Rocco's ultimate wine tasting glass. Created using Star Glass for the Italian Sommelier Association as their official wine tasting glass, for both red and white wines. </li>
+            <li> <span class="boldItalic bigger">Two methods for coloring glass</span>: spray the color on the glass and add the color to the hot mixture before the glass is formed.</li>
+            <li> <span class="boldItalic bigger">Tre Sensi</span>:  Bormioli Rocco's ultimate wine tasting glass. Created using Star Glass for the Italian Sommelier Association as their official wine tasting glass, for both red and white wines. </li>
           </div>
         </div>
         <!--/row--> 
