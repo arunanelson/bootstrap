@@ -717,3 +717,6 @@ h3 {
 .bigger {
 	font-size: 16px;
 }
+.cufon-loading { 
+                visibility: hidden;
+}
