@@ -111,7 +111,7 @@ body {
 	font-weight: bold;
 }
 #signupFrm input {
-	width: 195px;
+	width: 165px;
 	font-style: italic;
 	padding-left: 15px;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -431,14 +431,31 @@ li.center img {
 	height: 16px;
 	cursor: pointer;
 }
+.instaGramWhite{
+	background-image: url(../img/instagram.png);
+	background-repeat: no-repeat;
+	float: left;
+	margin-top: 3px;
+	margin-left: 20px;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+}
+
 .m5t {
 	margin-top: 5px;
+}
+.m5b {
+	margin-bottom: 5px;
 }
 .m40b {
 	margin-bottom: 40px;
 }
 .m20b {
 	margin-bottom: 20px;
+}
+.m10b {
+	margin-bottom: 10px;
 }
 .m20t {
 	margin-top: 15px;
@@ -523,6 +540,22 @@ li.center img {
 	height: 220px;
 	background-repeat: no-repeat;
 	background-image: url(../img/about_right.png);
+}
+.about_right2 {
+	float: right;
+	margin-top: 35px;
+	width: 220px;
+	height: 220px;
+	background-repeat: no-repeat;
+	background-image: url(../img/about_right_2.png);
+}
+.about_right3 {
+	float: right;
+	margin-top: 35px;
+	width: 220px;
+	height: 220px;
+	background-repeat: no-repeat;
+	background-image: url(../img/about_right_3.png);
 }
 .about_img {
 	margin-top: 45px;

@@ -89,6 +89,11 @@
 				$('body').on('mouseout', '.prod_colour_option', function(){
 					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("data-item-img") + '_big.png');
 			    });
+				
+				$('body').on('click', '#twitter, #faceBook, .twitterWhite, .faceBookWhite, .pInterestWhite, .instaGramWhite', function(){
+					window.open($(this).attr('data-url'), "_blank");
+			    });
+				
     }); 
 </script>
 <script>

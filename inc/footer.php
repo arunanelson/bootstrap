@@ -2,12 +2,15 @@
   <div class="footer-top">
     <div id="signup">
       <h4 class="footer-header">Sign up!</h4>
-      <div class="footer-text"> <a href="#">Get Bormioli Rocco<br />
+      <div class="footer-text"> <a href="#" style="cursor:default">Get Bormioli Rocco<br />
         news in your inbox</a>
         <div id="signupFrm">
-          <form class="navbar-form pull-left">
-            <input class="span2" id="signUpPlaceholder" type="text" placeholder="Email">
-          </form>
+          <div class="input-append m5t">
+            <form class="pull-left" action="<?php echo BASE_URL; ?>contact/thank-you/">
+              <input class="span2" name="email" id="email" type="email" required="required" placeholder="Email">
+              <button class="btn" id="signupNewsletter" type="submit">Go!</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -33,19 +36,18 @@
         <a href="<?php echo BASE_URL; ?>where_to_buy/stores">Where to buy</a><br />
         <a href="<?php echo BASE_URL; ?>contact">Contact</a><br />
         <div class="clearfix"></div>
-        <div class="faceBookWhite" title="FaceBook"></div>
-        <div class="twitterWhite" title="Twitter"></div>
+        <div class="faceBookWhite" data-url="http://facebook.com/BormioliRoccoUSA" title="FaceBook"></div>
+        <div class="twitterWhite" data-url="http://twitter.com/BormioliRoccoUS" title="Twitter"></div>
       </div>
     </div>
     <div class="clearfix"></div>
   </div>
   <div class="footer-bottom">
     <p> Registered office: Bormioli Rocco Glass Co Inc. | 41 Madison Ave | 16th &amp; 17th Floor | New York | NY | 10010 | USA	Tel: (1) 212 719 0606<br>
-      &copy;
       <?php
                             $time = time () ;
                             $year= date("Y",$time);
-                            echo $year;?>
-      Bormioli Rocco USA,  All Rights Reserved. Company registration no: xxxxxxx | VAT no: xxx xxxx xx </p>
+                            echo "&copy; ". $year;?>
+      Bormioli Rocco USA,  All Rights Reserved. Company registration no: 00767720345 | VAT no: 001 654 903 43 </p>
   </div>
 </footer>

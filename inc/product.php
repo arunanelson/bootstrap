@@ -21,7 +21,35 @@
       <li> Ø <?php echo $specs->theta_i; ?> - <?php echo $specs->theta_mm; ?> mm</li>
       <?php endif; ?>
       <li> Item code: <span class="item_code"><?php echo $specs->item_code; ?></span></li>
+      <?php if($specs->cod_dec != NULL): ?>
+      <li> Decoration code: <?php echo $specs->cod_dec; ?></li>
+      <?php endif; ?>
+      <?php if($specs->pack != NULL): ?>
       <li> Pack: <?php echo $specs->pack; ?> </li>
+      <?php endif; ?>
+      <?php if($specs->pack2 != NULL): ?>
+      <li> Pack 2: <?php echo $specs->pack2; ?> </li>
+      <?php endif; ?>
+      <?php if($specs->pack3 != NULL): ?>
+      <li> Pack 3: <?php echo $specs->pack3; ?> </li>
+      <?php endif; ?>
+      <?php if($specs->notes != NULL): ?>
+      <li> Notes: <?php echo $specs->notes; ?></li>
+      <?php endif; ?>
+      <?php if($specs->is_set == 1): ?>
+      <?php if($specs->piece1 != NULL): ?>
+      <li> Piece 1: <?php echo $specs->piece1; ?> </li>
+      <?php endif; ?>
+      <?php if($specs->piece2 != NULL): ?>
+      <li> Piece 2: <?php echo $specs->piece2; ?> </li>
+      <?php endif; ?>
+      <?php if($specs->piece3 != NULL): ?>
+      <li> Piece 3: <?php echo $specs->piece3; ?> </li>
+      <?php endif; ?>
+      <?php if($specs->piece4 != NULL): ?>
+      <li> Piece 4: <?php echo $specs->piece4; ?> </li>
+      <?php endif; ?>
+      <?php endif; ?>
     </ul>
     <?php if($product->colours != NULL && empty($product->description)): ?>
     <?php $colours = strpos($product->colours, ',') !== false  ? explode(",",$product->colours) : array($product->colours); ?>
@@ -46,15 +74,21 @@
   <?php endif; ?>
 </div>
 <?php if($product->alt_pic != NULL): ?>
-<a data-name="<?php echo $product->name ?>" data-set = "true" href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>.png"/></a> 
-<a href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->alt_pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img style="display:none" src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->alt_pic); ?>.png"/></a>
+<a data-name="<?php echo $product->name ?>" data-set = "true" href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>.png"/></a> <a href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->alt_pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img style="display:none" src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->alt_pic); ?>.png"/></a>
 <?php else: ?>
 <a data-name="<?php echo $product->name ?>" data-set = "false" href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>.png"/></a>
 <?php endif; ?>
 <div><span class="fav-product-heading" product="<?php echo strtolower($product->pic); ?>"><?php echo ucwords(strtolower($product->name)); ?></span><br />
-  <span class="fav-product-detail"><?php if(!empty($product->description)){echo strtoupper($product->description);} else{ echo (($specs->cc_oz != NULL && $specs->cc_oz !='na') ? $specs->cc_oz. ' oz' : 'Ø '.$specs->theta_i);} ?>
-  <?php if($product->colours != NULL && empty($product->description)){
+  <span class="fav-product-detail">
+  <?php if(!empty($product->description)){echo strtoupper($product->description);}?>
+  <?php if($product->colours != NULL){
+	  if(!empty($product->description)){
 				  echo '• '.$coloursCount.' COLORS';
+	  }
+	  else
+	  {
+		   echo $coloursCount.' COLORS';
+	  }
 				  } 
 					   ?>
   </span></div>

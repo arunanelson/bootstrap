@@ -38,8 +38,8 @@
       </ul>
       <div id="searchFrm" class="searchbox" onclick="$(this).find('input').focus();">
         <div id="share">
-          <div id="faceBook" title="FaceBook"></div>
-          <div id="twitter" title="Twitter"></div>
+          <div id="faceBook" data-url="http://facebook.com/BormioliRoccoUSA" title="FaceBook"></div>
+          <div id="twitter" data-url="http://twitter.com/BormioliRoccoUS" title="Twitter"></div>
         </div>
         <div> <a></a> <img src="<?php echo BASE_URL; ?>img/preloader.gif" border=0 id="ipreloader" />
           <form class="navbar-form pull-right">

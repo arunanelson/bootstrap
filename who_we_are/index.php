@@ -67,6 +67,7 @@
               and Ceretto are just a few of the recognizable brands. </p>
           </div>
         </div>
+        <div class="about_right2"> </div>
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
@@ -100,6 +101,7 @@
               but production being ramped up with blown glass is the beginning of it taking off as a real industry. </p>
           </div>
         </div>
+        <div class="about_right3"> </div>
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">

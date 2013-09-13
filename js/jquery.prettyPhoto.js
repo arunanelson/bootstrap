@@ -180,7 +180,7 @@
 			// Rebuild Facebook Like Button with updated href
 			if(settings.social_tools){
 				facebook_like_link = settings.social_tools.replace('{location_href}', encodeURIComponent(location.href)); 
-				$pp_pic_holder.find('.pp_social').html('<div style="margin-bottom:10px">SHARE</div><div class="faceBookWhite"></div><div class="twitterWhite"></div><div class="pInterestWhite"></div>');
+				$pp_pic_holder.find('.pp_social').html('<div style="margin-bottom:10px">SHARE</div><div data-url="https://www.facebook.com/sharer.php?u='+ encodeURIComponent(document.location) +'" class="faceBookWhite"></div><div data-url="http://twitter.com/share" class="twitterWhite"></div><div data-url="http://pinterest.com/pin/create/button/?url='+ encodeURIComponent(document.location) +'" class="pInterestWhite"></div><div data-url="http://instagram.com/BormioliRoccoUS" class="instaGramWhite"></div>');
 			}
 			
 			// Fade the content in
