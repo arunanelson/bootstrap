@@ -8,7 +8,7 @@
  $pageTitle = $prod_group->name. ' | '. ($prod_cat->id != 0  ? $prod_cat->name.' | ' : '').(ucwords(strtolower($product_line->name)));
  	
  $rows = R::$f->begin()->select('*')->from('products')
-  ->where(' line_id = ? ')
+  ->where(' line_id = ? order by `id` ')
   ->put($id)->get();
  $products = R::convertToBeans('products',$rows); 
 ?>

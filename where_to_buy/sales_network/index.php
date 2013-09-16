@@ -15,14 +15,10 @@
         <div id="salesWrapper" class="m5t">
           <div class="article_left w240">
             <div class="m10b m20t" id="sales">SALES NETWORK</div>
-            <div id="city">New York</div>
-            <div id="address"> Bormioli Rocco Showroom<br>
-              41 Madison Ave<br>
-              16th &amp; 17th Floor<br>
-              New York<br>
-              NY, 10010</div>
-            <div class="m5t"><span id="tel">Tel: (1) 212 719 0606</span><br>
-              <span id="email">Email: <a class="red" href="mailto:info@bormioliroccousa.com">info@bormioliroccousa.com</a></span></div>
+            <div id="city"></div>
+            <div id="address"></div>
+            <div class="m5t"><span id="tel"></span><br>
+              <span id="email"></span></div>
           </div>
           <div class="article_container">
             <div class="m-70t" id="map"> </div>

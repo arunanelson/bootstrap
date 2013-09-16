@@ -176,11 +176,13 @@
 				
 			//display product logo
 			$pp_pic_holder.find('.pp_logo').html($(pp_logos));
+			$("[rel=tooltip]").tooltip({ placement: 'top'});
+
 		
 			// Rebuild Facebook Like Button with updated href
 			if(settings.social_tools){
 				facebook_like_link = settings.social_tools.replace('{location_href}', encodeURIComponent(location.href)); 
-				$pp_pic_holder.find('.pp_social').html('<div style="margin-bottom:10px">SHARE</div><div data-url="https://www.facebook.com/sharer.php?u='+ encodeURIComponent(document.location) +'" class="faceBookWhite"></div><div data-url="http://twitter.com/share" class="twitterWhite"></div><div data-url="http://pinterest.com/pin/create/button/?url='+ encodeURIComponent(document.location) +'" class="pInterestWhite"></div><div data-url="http://instagram.com/BormioliRoccoUS" class="instaGramWhite"></div>');
+				$pp_pic_holder.find('.pp_social').html('<div style="margin-bottom:10px">SHARE</div><div data-url="https://www.facebook.com/sharer.php?u='+ encodeURIComponent(document.location) +'" class="faceBookWhite"></div><div data-url="http://twitter.com/share" class="twitterWhite"></div><div data-url="http://pinterest.com/pin/create/button/?url='+ encodeURIComponent(document.location) +'" class="pInterestWhite"></div>');
 			}
 			
 			// Fade the content in
@@ -525,7 +527,11 @@
 		    Cufon.replace('.pp_social', { fontFamily: 'GillSans-Cufon', fontSize: '12px' }); 
 			Cufon.replace('.prod_strapline', { fontFamily: 'BodoniBook-Cufon', fontSize: '18px' }); 
 			_insert_gallery();
+			
+			$("[rel=tooltip2]").tooltip({ placement: 'bottom'});
+			
 			pp_settings.ajaxcallback();
+
 		};
 		
 		/**

@@ -83,10 +83,10 @@
 					$(this).parent().parent().find("a[rel^='prettyPhoto']")[0].click()
 				});
 				
-				$('body').on('mouseenter', '.prod_colour_option', function(){
-					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("for") + '_' + $(this).attr("data-item-id").toLowerCase() + '_big.png');;
+				$('body').on('mouseenter, mouseover', '.prod_colour_option', function(){
+					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("data-color"));
 			    });
-				$('body').on('mouseout', '.prod_colour_option', function(){
+				$('body').on('mouseout, mouseleave', '.prod_colour_option', function(){
 					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("data-item-img") + '_big.png');
 			    });
 				
@@ -99,6 +99,7 @@
 <script>
         !function ($) {
             $(function () {
+			$("div[data-tooltip]").tooltip({placement:"top"});
 			$(".scrollItem").click(function(event) {
 				event.preventDefault();	
 				if(window.location.toString().indexOf('who_we_are') < 0)

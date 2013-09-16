@@ -14,9 +14,9 @@
 	$pageTitle = $prod_group->name.' | '.$prod_cat->name;
  }
  	
- $rows = R::$f->begin()->select('*')->from('product_lines')
+ $rows = R::$f->begin()->select('*')->from('product_lines pl')
   ->where(' prod_group_id = ? ')
-  ->and(' prod_cat_id = ? ')
+  ->and(' prod_cat_id = ?  order by `name` asc')
   ->put($group)->put($cat)->get();
  $product_lines = R::convertToBeans('product_lines',$rows); 
 
@@ -35,12 +35,33 @@
         <div id="productsWrapper">
           <?php foreach($product_lines as $product_line): ?>
           <div class="fleft product <?php echo $product_line->colour; ?>">
-            <?php $products = $product_line->getProducts(); $product = reset($products); ?>
+            <?php $products = $product_line->getProducts(); $toFind = $product_line->getStarProduct(); $product = $toFind == NULL ? reset($products) : reset($toFind); ?>
             <?php if(count($products) == 1 ): ?>
-             <?php include "../inc/product.php"; ?>
+            <?php include "../inc/product.php"; ?>
             <?php else: ?>
-            <a href="<?php echo BASE_URL.'products/line/?id='.$product_line->id; ?>"> <img title="<?php echo ucwords(strtolower($product_line->name)); ?>" src="../img/catalog/<?php echo strtolower(reset($products)->pic); ?>.png"/> </a>
-            <div><span class="fav-product-heading" title="<?php echo ucwords(strtolower($product_line->name)); ?>"><?php echo ucwords(strtolower($product_line->name)); ?></span></div>
+            <a href="<?php echo BASE_URL.'products/line/?id='.$product_line->id; ?>"> <img title="<?php echo ucwords(strtolower($product_line->name)); ?>" src="../img/catalog/<?php echo strtolower($product->pic); ?>.png"/> </a>
+            <div><span class="fav-product-heading" title="<?php echo ucwords(strtolower($product_line->name)); ?>"><?php echo ucwords(strtolower($product_line->name)); ?></span> <br />
+              <span class="fav-product-detail">
+              <?php if(!empty($product_line->description)){echo strtoupper($product_line->description);}?>
+              <?php if($product->colours != NULL){
+	  $colours = strpos($product->colours, ',') !== false  ? explode(",",$product->colours) : array($product->colours);
+	  $coloursCount = count($colours);
+	  if(((!empty($product_line->description))) && (strpos(strtolower($product_line->description), "color") === false)){
+				  echo '• '.$coloursCount.' COLORS';
+	  }
+	   if((!empty($product->description)) && (strpos(strtolower($product->description), "color") !== false)){
+		  //do nothing
+	  }
+	  else
+	  {
+		   if(empty($product_line->description))
+		  {
+		   echo $coloursCount.' COLORS';
+		  }
+	  }
+				  } 
+					   ?>
+              </span> </div>
             <?php endif; ?>
           </div>
           <?php $index++; ?>

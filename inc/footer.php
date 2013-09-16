@@ -6,8 +6,8 @@
         news in your inbox</a>
         <div id="signupFrm">
           <div class="input-append m5t">
-            <form class="pull-left" action="<?php echo BASE_URL; ?>contact/thank-you/">
-              <input class="span2" name="email" id="email" type="email" required="required" placeholder="Email">
+            <form class="pull-left" action="<?php echo BASE_URL; ?>newsletter.php" method="GET">
+              <input class="span2" name="email" id="email" type="email" required placeholder="Email">
               <button class="btn" id="signupNewsletter" type="submit">Go!</button>
             </form>
           </div>
@@ -36,8 +36,9 @@
         <a href="<?php echo BASE_URL; ?>where_to_buy/stores">Where to buy</a><br />
         <a href="<?php echo BASE_URL; ?>contact">Contact</a><br />
         <div class="clearfix"></div>
-        <div class="faceBookWhite" data-url="http://facebook.com/BormioliRoccoUSA" title="FaceBook"></div>
-        <div class="twitterWhite" data-url="http://twitter.com/BormioliRoccoUS" title="Twitter"></div>
+        <div data-tooltip class="faceBookWhite" data-url="http://facebook.com/BormioliRoccoUSA" title="FaceBook"></div>
+        <div data-tooltip class="twitterWhite" data-url="http://twitter.com/BormioliRoccoUS" title="Twitter"></div>
+        <div data-tooltip data-url="http://instagram.com/BormioliRoccoUS" class="instaGramWhite" title="Instagram"></div>
       </div>
     </div>
     <div class="clearfix"></div>

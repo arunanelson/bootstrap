@@ -30,7 +30,7 @@
             The results are beautiful and durable tableware, supremely safe pharmaceutical packaging, 
             elegant bottles for cosmetics and perfumes, and bottles and jars that hold some of 
             Italy’s most iconic and delectable brands. </div>
-          <div class="about_right"> </div>
+          <div class="about_right"><img src="../img/about_right_1.png" alt=""/> </div>
           <div class="clearfix"></div>
         </div>
         <div class="headline"> Bormioli Rocco uses the finest natural resources to create 
@@ -67,7 +67,7 @@
               and Ceretto are just a few of the recognizable brands. </p>
           </div>
         </div>
-        <div class="about_right2"> </div>
+        <div class="about_right"><img src="../img/about_right_2.png" alt=""/> </div>
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
@@ -101,15 +101,15 @@
               but production being ramped up with blown glass is the beginning of it taking off as a real industry. </p>
           </div>
         </div>
-        <div class="about_right3"> </div>
+        <div class="about_right"><img src="../img/about_right_3.png" alt=""/> </div>
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
-            <div class="item active" id="italianglass"> <img src="../img/slides/slide-09.jpg" alt=""> </div>
+            <div class="item active" id="italianglass"> <img src="../img/slides/slide-02.jpg" alt=""> </div>
           </div>
         </div>
         <div class="about_copy">
-          <div class="article_title w310">The History OF Italian Glass</div>
+          <div class="article_title w310">The History of Italian Glass</div>
           <div class="article_body w640 fleft">
             <p>For several hundreds of years after the first century, 
               most glass making rolled along with pretty much the same number of advances across what is now Europe.  
@@ -134,6 +134,7 @@
               establish the area as a glass-making center. The Bormioli family was among them, and thus a dynasty was born.</p>
           </div>
         </div>
+        <div class="about_right"><img src="../img/about_right_4.png" alt=""/> </div>
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
@@ -163,6 +164,7 @@
               experience an everyday mix of American and Italian culture.</p>
           </div>
         </div>
+        <div class="about_right"><img src="../img/about_right_5.png" alt=""/> </div>
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
@@ -186,6 +188,14 @@
             </ul>
           </div>
         </div>
+        <div class="partners_right"> 
+        <img class="pull-left m20t" src="../img/partners/CFKC-logo-w-url.png" alt=""/> 
+        <img class="pull-right m5t m5b" src="../img/partners/TPA_Logo_RGB_White_Final.png" alt=""/> 
+        <img class="pull-left m40t" src="../img/partners/Eataly-Logo_11x14.png" alt=""/> 
+        <img class="pull-right" src="../img/partners/Edible-Magazine-logo.png" alt=""/> 
+        <img class="pull-left m20t" src="../img/partners/GatherJournal_blacklogo.png" alt=""/> 
+        <img class="pull-right m40t" src="../img/partners/SAVEUR_blk.png" alt=""/> 
+        <img class="pull-left m30t" src="../img/partners/AIS_IMAGE_WHITE.png" alt=""/> </div>
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
@@ -228,6 +238,8 @@
             <li> <span class="boldItalic bigger">Tre Sensi</span>:  Bormioli Rocco's ultimate wine tasting glass. Created using Star Glass for the Italian Sommelier Association as their official wine tasting glass, for both red and white wines. </li>
           </div>
         </div>
+        <div class="about_right"><img src="../img/about_right_6.png" alt=""/> </div>
+        <div class="clearfix"></div>
         <!--/row--> 
       </div>
       <!--/span--> 

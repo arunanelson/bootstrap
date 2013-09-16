@@ -47,7 +47,7 @@ $pageTitle = "Contact Us";
           <div class="article_left w300">
             <div>Feel free to get in touch if you have<br>
               any questions about our products!</div>
-            <div class="m5t">BORMIOLI ROCCO USA<br>
+            <div class="m5t">BORMIOLI ROCCO NORTH AMERICA<br>
               41 Madison Ave<br>
               16th &amp; 17th Floor<br>
               New York<br>

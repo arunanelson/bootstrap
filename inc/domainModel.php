@@ -18,6 +18,11 @@ class Model_Product_Lines extends RedBean_SimpleModel {
             ' line_id = ? order by `id` asc',array(
             $this->id));
         }
+		public function getStarProduct() {
+            return R::find('products',
+            ' line_id = ? and line_star = 1 ',array(
+            $this->id));
+        }
     }
 	
 class Model_Products extends RedBean_SimpleModel {

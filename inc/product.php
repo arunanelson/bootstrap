@@ -4,15 +4,32 @@
   </div>
   <div class="prod_details">
     <ul class="prod_highlights summary">
+      <?php if(isset($_GET['cat']) && $_GET['cat'] ==10 ): ?>
+      <li class="special_line">All our shot glasses have:</li>
+      <?php endif; ?>
+      <?php if($product->features == NULL): ?>
       <?php $details = explode("•", $product_line->details); ?>
+      <?php else: ?>
+      <?php $details = explode("•", $product->features); ?>
+      <?php endif; ?>
       <?php foreach(array_slice($details, 1) as $detail): ?>
+      <?php if (strpos((strtolower($detail)), 'recommended wines') !== false 
+	  || strpos((strtolower($detail)), 'recommended liqueurs') !== false
+	  || strpos((strtolower($detail)), 'recommended beers') !== false): ?>
+      <li class="recommended"><?php echo (trim($detail)); ?></li>
+      <?php else: ?>
       <li><?php echo (trim($detail)); ?></li>
+      <?php endif; ?>
       <?php endforeach; ?>
     </ul>
     <ul class="prod_highlights specs">
       <?php $specs = reset($product->getSpecs()); ?>
       <?php if($specs->cc_oz != NULL && $specs->cc_oz !='na'&& $specs->cc_oz !='n.a.'): ?>
-      <li> <?php echo $specs->cc_oz; ?> oz - <?php echo $specs->cc_cl; ?> cl</li>
+      <li> <?php echo $specs->cc_oz; ?>
+        <?php if(strpos(strtolower($specs->cc_oz), 'oz') === false && strpos(strtolower($specs->cc_oz), '"') === false && strpos(strtolower($specs->cc_oz), 'cs') === false): ?>
+        oz - <?php echo $specs->cc_cl; ?> cl
+        <?php endif; ?>
+      </li>
       <?php endif; ?>
       <?php if($specs->h_inches != NULL && $specs->h_inches !='na'&& $specs->h_inches !='n.a.'): ?>
       <li> H <?php echo $specs->h_inches; ?> - <?php echo $specs->h_mm; ?> mm</li>
@@ -25,16 +42,22 @@
       <li> Decoration code: <?php echo $specs->cod_dec; ?></li>
       <?php endif; ?>
       <?php if($specs->pack != NULL): ?>
-      <li> Pack: <?php echo $specs->pack; ?> </li>
+      <?php //Convert whitespaces and underscore to dash
+        $pack = preg_replace("/[!]/", "", (trim(strtolower($specs->pack))));
+   	  ?>
+      <li> Pack: <?php echo $pack; ?> </li>
       <?php endif; ?>
       <?php if($specs->pack2 != NULL): ?>
-      <li> Pack 2: <?php echo $specs->pack2; ?> </li>
+      <?php //Convert whitespaces and underscore to dash
+        $pack = preg_replace("/[!]/", "", (trim(strtolower($specs->pack2))));
+   	  ?>
+      <li> Pack 2: <?php echo $pack; ?> </li>
       <?php endif; ?>
       <?php if($specs->pack3 != NULL): ?>
-      <li> Pack 3: <?php echo $specs->pack3; ?> </li>
-      <?php endif; ?>
-      <?php if($specs->notes != NULL): ?>
-      <li> Notes: <?php echo $specs->notes; ?></li>
+      <?php //Convert whitespaces and underscore to dash
+        $pack = preg_replace("/[!]/", "", (trim(strtolower($specs->pack3))));
+   	  ?>
+      <li> Pack 3: <?php echo $pack; ?> </li>
       <?php endif; ?>
       <?php if($specs->is_set == 1): ?>
       <?php if($specs->piece1 != NULL): ?>
@@ -51,12 +74,17 @@
       <?php endif; ?>
       <?php endif; ?>
     </ul>
-    <?php if($product->colours != NULL && empty($product->description)): ?>
+    <?php if($product->colours != NULL): ?>
+    <?php if (strpos($_SERVER['PHP_SELF'], "whats_new") !== false): ?>
+    <?php $colours = explode(",",$product_line->newcolors); ?>
+    <?php else: ?>
     <?php $colours = strpos($product->colours, ',') !== false  ? explode(",",$product->colours) : array($product->colours); ?>
+    <?php endif; ?>
     <?php $coloursCount = count($colours); ?>
     <p class="prod_colours">COLORS</p>
     <?php foreach($colours as $colour): ?>
-    <div class="prod_colour_option <?php echo "item_".$colour; ?>" data-item-img="<?php echo $product->pic; ?>" data-item-id="<?php echo $colour; ?>" for="<?php echo (str_replace(" ", "-", strtolower($product->name))); ?>"></div>
+    <?php $imgPath = strtolower(substr($product->pic, 0, strripos($product->pic, "_"))); ?>
+    <div rel="tooltip2" class="prod_colour_option <?php echo "item_".$colour; ?>" title="<?php echo $colour; ?>" data-item-img="<?php echo $product->pic; ?>" data-item-id="<?php echo $colour; ?>" data-color="<?php echo $imgPath."_".$colour."_big.png"; ?>"></div>
     <?php endforeach; ?>
     <div class="clearfix"></div>
     <?php endif; ?>
@@ -69,26 +97,49 @@
   <?php //Convert whitespaces and underscore to dash
     $logoImg = preg_replace("/[\s_]/", "-", (trim(strtolower($logo))));
    ?>
-  <img src="<?php echo BASE_URL."img/logos/".$logoImg.".png"; ?>" title="<?php echo trim($logo); ?>" />
+  <img rel="tooltip" src="<?php echo BASE_URL."img/logos/".$logoImg.".png"; ?>" title="<?php echo trim($logo); ?>" />
   <?php endforeach; ?>
   <?php endif; ?>
 </div>
 <?php if($product->alt_pic != NULL): ?>
 <a data-name="<?php echo $product->name ?>" data-set = "true" href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>.png"/></a> <a href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->alt_pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img style="display:none" src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->alt_pic); ?>.png"/></a>
 <?php else: ?>
-<a data-name="<?php echo $product->name ?>" data-set = "false" href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>_big.png" rel="prettyPhoto[<?php echo $product->name ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>.png"/></a>
+<a data-name="<?php echo $product->name ?>" data-set = "false" href="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>_big.png" rel="prettyPhoto[<?php echo (($product->group_name == NULL) ? $product->name : $product->group_name) ?>]"><img src="<?php echo BASE_URL; ?>img/catalog/<?php echo strtolower($product->pic); ?>.png"/></a>
 <?php endif; ?>
-<div><span class="fav-product-heading" product="<?php echo strtolower($product->pic); ?>"><?php echo ucwords(strtolower($product->name)); ?></span><br />
+<?php
+ if (isset($_GET['group']))
+ {
+	 $prodName = strtolower($product_line->name);
+	 $prodDesc = $product_line->description;
+ }
+ else
+ {
+	 $prodName = $product->name;
+	 preg_match ("!\d+!", $product->name, $matches, PREG_OFFSET_CAPTURE);
+	 if(count($matches) !== 0)
+	 {
+		 $prodSize = substr($product->name, $matches[0][1], (strlen($product->name) - $matches[0][1]));
+		 $prodName = substr($product->name, 0, $matches[0][1]);
+	 }
+	 $prodDesc = $product->description;
+ }
+ ?>
+<div><span class="fav-product-heading" product="<?php echo strtolower($product->pic); ?>"><?php echo ucwords(($prodName)); ?></span><br />
   <span class="fav-product-detail">
-  <?php if(!empty($product->description)){echo strtoupper($product->description);}?>
+  <?php if(!empty($prodDesc)){echo strtoupper($prodDesc);}?>
+  <?php if(!empty($prodSize)){echo strtoupper($prodSize);}?>
   <?php if($product->colours != NULL){
-	  if(!empty($product->description)){
-				  echo '• '.$coloursCount.' COLORS';
-	  }
-	  else
-	  {
-		   echo $coloursCount.' COLORS';
-	  }
-				  } 
-					   ?>
+	  $coloursCount = count($colours);
+		  if((!empty($prodDesc)) && (strpos(strtolower($prodDesc), "color") === false)){
+					  echo '• '.$coloursCount.' COLORS';
+		  }
+		  if((!empty($prodDesc)) && (strpos(strtolower($prodDesc), "color") !== false)){
+			  //do nothing
+		  }
+		  if (empty($prodDesc))
+		  {
+			   echo $coloursCount.' COLORS';
+		  }
+		} 
+   ?>
   </span></div>
