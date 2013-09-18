@@ -36,11 +36,14 @@
           <?php foreach($product_lines as $product_line): ?>
           <div class="fleft product <?php echo $product_line->colour; ?>">
             <?php $products = $product_line->getProducts(); $toFind = $product_line->getStarProduct(); $product = $toFind == NULL ? reset($products) : reset($toFind); ?>
+            <?php if(count($product_lines) == 1 ): ?>
+            <?php header("Location: ".BASE_URL."products/line/?id=".$product_line->id); ?>
+            <?php endif; ?>
             <?php if(count($products) == 1 ): ?>
             <?php include "../inc/product.php"; ?>
             <?php else: ?>
-            <a href="<?php echo BASE_URL.'products/line/?id='.$product_line->id; ?>"> <img title="<?php echo ucwords(strtolower($product_line->name)); ?>" src="../img/catalog/<?php echo strtolower($product->pic); ?>.png"/> </a>
-            <div><span class="fav-product-heading" title="<?php echo ucwords(strtolower($product_line->name)); ?>"><?php echo ucwords(strtolower($product_line->name)); ?></span> <br />
+            <a href="<?php echo BASE_URL.'products/line/?id='.$product_line->id; ?>"> <img style="max-height:135px" title="<?php echo ucwords(strtolower($product_line->name)); ?>" src="../img/catalog/<?php echo strtolower($product->pic); ?>.png"/> </a>
+            <div style="margin-top:15px"><span class="fav-product-heading" title="<?php echo ucwords(strtolower($product_line->name)); ?>"><?php echo ucwords(strtolower($product_line->name)); ?></span> <br />
               <span class="fav-product-detail">
               <?php if(!empty($product_line->description)){echo strtoupper($product_line->description);}?>
               <?php if($product->colours != NULL){

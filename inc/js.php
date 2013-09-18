@@ -85,9 +85,14 @@
 				
 				$('body').on('mouseenter, mouseover', '.prod_colour_option', function(){
 					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("data-color"));
+					$(".pp_code").html("<span class=\"pull-left\">"+ $(this).attr("data-item-code") +"</span><span style=\"margin-left:30px\">"+ $(this).attr("data-decoration-code") +"</span>");
+					Cufon.replace('.pp_code', { fontFamily: 'GillSans-Cufon', fontSize: '12px' }); 
+
 			    });
 				$('body').on('mouseout, mouseleave', '.prod_colour_option', function(){
 					$("#fullResImage").attr('src', '<?php echo BASE_URL; ?>img/catalog/' + $(this).attr("data-item-img") + '_big.png');
+					$(".pp_code").html("<span class=\"pull-left\">"+ $(this).attr("data-orig-itemcode") +"</span><span style=\"margin-left:30px\">"+ $(this).attr("data-orig-coddec") +"</span>");
+					Cufon.replace('.pp_code', { fontFamily: 'GillSans-Cufon', fontSize: '12px' }); 
 			    });
 				
 				$('body').on('click', '#twitter, #faceBook, .twitterWhite, .faceBookWhite, .pInterestWhite, .instaGramWhite', function(){

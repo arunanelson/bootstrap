@@ -3,6 +3,7 @@
 <meta charset="utf-8">
 <title><?php echo !empty($pageTitle) ? $pageTitle." | BORMIOLI ROCCO GLASS CO.INC" : "Dinnerware tableware, Glassware, Food storage - BORMIOLI ROCCO GLASS CO.INC"; ?></title>
 <meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 <meta name="author" content="Aruna Nelson - arunanelson@hotmail.com">
 
 <!-- Le styles -->

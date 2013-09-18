@@ -36,9 +36,10 @@
         <a href="<?php echo BASE_URL; ?>where_to_buy/stores">Where to buy</a><br />
         <a href="<?php echo BASE_URL; ?>contact">Contact</a><br />
         <div class="clearfix"></div>
-        <div data-tooltip class="faceBookWhite" data-url="http://facebook.com/BormioliRoccoUSA" title="FaceBook"></div>
-        <div data-tooltip class="twitterWhite" data-url="http://twitter.com/BormioliRoccoUS" title="Twitter"></div>
-        <div data-tooltip data-url="http://instagram.com/BormioliRoccoUS" class="instaGramWhite" title="Instagram"></div>
+        <div data-tooltip class="faceBookWhite" data-url="http://facebook.com/BormioliRoccoUSA"></div>
+        <div data-tooltip class="pInterestWhite2" data-url="http://www.pinterest.com/bormiolorocco"></div>
+        <div data-tooltip class="twitterWhite" data-url="http://twitter.com/BormioliRoccoUS"></div>
+        <div data-tooltip data-url="http://instagram.com/BormioliRoccoUS" class="instaGramWhite"></div>
       </div>
     </div>
     <div class="clearfix"></div>

@@ -142,7 +142,6 @@
           </div>
         </div>
         <div class="about_copy">
-          <div class="article_title w310">Bormioli Rocco North America</div>
           <div class="article_body w640 fleft">
             <p>Based in the heart of Manhattan, on the edge of the beautiful and historic 
               Madison Square Park, our offices are perched on the 16th and 17th floors of 41 Madison Ave with striking and 
@@ -189,13 +188,14 @@
           </div>
         </div>
         <div class="partners_right"> 
-        <img class="pull-left m20t" src="../img/partners/CFKC-logo-w-url.png" alt=""/> 
-        <img class="pull-right m5t m5b" src="../img/partners/TPA_Logo_RGB_White_Final.png" alt=""/> 
-        <img class="pull-left m40t" src="../img/partners/Eataly-Logo_11x14.png" alt=""/> 
-        <img class="pull-right" src="../img/partners/Edible-Magazine-logo.png" alt=""/> 
-        <img class="pull-left m20t" src="../img/partners/GatherJournal_blacklogo.png" alt=""/> 
-        <img class="pull-right m40t" src="../img/partners/SAVEUR_blk.png" alt=""/> 
-        <img class="pull-left m30t" src="../img/partners/AIS_IMAGE_WHITE.png" alt=""/> </div>
+        <a href="http://www.cookiesforkidscancer.org" target="_blank"><img class="pull-left m20t" src="../img/partners/CFKC-logo-w-url.png" alt=""/></a> 
+        <a href="http://thepinkagenda.org" target="_blank"><img class="pull-right m5t m5b" src="../img/partners/TPA_Logo_RGB_White_Final.png" alt=""/></a> 
+        <a href="http://www.eataly.com" target="_blank"><img class="pull-left m40t" src="../img/partners/Eataly-Logo_11x14.png" alt=""/></a> 
+        <a href="#"><img class="pull-right" src="../img/partners/Edible-Magazine-logo.png" alt=""/></a> 
+        <a href="http://www.gatherjournal.com" target="_blank"><img class="pull-left m20t" src="../img/partners/GatherJournal_blacklogo.png" alt=""/></a> 
+        <a href="http://www.saveur.com" target="_blank"><img class="pull-right m40t" src="../img/partners/SAVEUR_blk.png" alt=""/></a> 
+        <a href="http://www.aisitalia.it" target="_blank"><img target="_blank" class="pull-left m30t" src="../img/partners/AIS_IMAGE_WHITE.png" alt=""/></a> 
+        </div>
         <div class="clearfix"></div>
         <div class="carousel slide boxshadow about_img">
           <div class="carousel-inner">
@@ -207,24 +207,12 @@
             <li> Headquarters: Fidenza, Italy. Founded in Italy over 1,300 years ago. 9 factories in Europe, over 2,500 employees.</li>
             <li> 4 Business units:
               <ul>
-                <li><span class="boldItalic bigger">1.	Tableware Glass</span> - Market share: 50% share in Italian Mass Market retail sales of tableware, 25% in department and specialized stores.</li>
+                <li><span class="boldItalic bigger">1.	Tableware Glass</span> </li>
                 <li><span class="boldItalic bigger">2.	Food and Beverage Glass</span> - Niche food market: bottles and jars for Nutella, Ferrero, Molinari Sambuca among others. </li>
-                <li><span class="boldItalic bigger">3.	Pharmaceuticals Glass and Plastic</span> - 65% market share glass in Italy, 40% in plastic childproof caps.</li>
-                <li><span class="boldItalic bigger">4.	Perfume and Cosmetics Plastic</span> - 12-15% of the entire EU market. Customers include L'Oreal, Clarins, Armani, BVLGARI, Louis Vuitton and Yves Rocher.</li>
+                <li><span class="boldItalic bigger">3.	Pharmaceuticals Glass and Plastic</span> </li>
+                <li><span class="boldItalic bigger">4.	Perfume and Cosmetics Plastic</span> - Customers include L'Oreal, Clarins, Armani, BVLGARI, Louis Vuitton and Yves Rocher.</li>
               </ul>
             </li>
-            <li> Plant Production in 2011
-              <ul>
-                <li> <span class="boldItalic bigger">Fidenza, Italy</span>: 123 million glass tableware items</li>
-                <li> <span class="boldItalic bigger">Altare, Italy</span>: 224 million glass tableware items</li>
-                <li> <span class="boldItalic bigger">Azuqueca, Spain</span>: 136 million glass tableware items</li>
-                <li> <span class="boldItalic bigger">Bergantino, Italy</span>: 1,550 million glass pharmaceutical bottles</li>
-                <li> <span class="boldItalic bigger">Castelguelfo, Italy</span>: 534 million pharmaceutical plastic bottles</li>
-                <li> <span class="boldItalic bigger">Rivanazzano, Italy</span>: 2,134 million pharmaceutical plastic bottles</li>
-                <li> <span class="boldItalic bigger">Saint-Sulice, France</span>: 292 million plastic pharmaceutical bottles</li>
-                <li> <span class="boldItalic bigger">Trezzano, Italy</span>: 379 million glass food and beverage bottles</li>
-                <li> <span class="boldItalic bigger">Masniers, France</span>: 219 million glass perfume and cosmetic bottles</li>
-              </ul>
             <li> The Five Types of Bormioli Rocco Glass
               <ul>
                 <li> <span class="boldItalic bigger">Soda Lime Glass:</span> Created from sand, soda and calcium, it is the most common type of glass. Typically used in wine bottles, food jars and pharmaceutical bottles. </li>

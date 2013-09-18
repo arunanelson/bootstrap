@@ -1,15 +1,25 @@
 <?php require_once("../../inc/domainModel.php");?>
 <?php
  $id = $_GET['id'];
+ if(isset($_GET['new']))
+ {
+	 $rows = R::$f->begin()->select('*')->from('products')
+  ->where(' line_id = ? AND is_new = 1 order by `id` ')
+  ->put($id)->get();
+ }
+ else
+ {
+	  	
+ $rows = R::$f->begin()->select('*')->from('products')
+  ->where(' line_id = ? order by `id` ')
+  ->put($id)->get();
+ }
  
  $product_line = R::load('product_lines', $id);
  $prod_group = R::load('product_groups', $product_line->prod_group_id);
  $prod_cat = R::load('categories', $product_line->prod_cat_id);
  $pageTitle = $prod_group->name. ' | '. ($prod_cat->id != 0  ? $prod_cat->name.' | ' : '').(ucwords(strtolower($product_line->name)));
- 	
- $rows = R::$f->begin()->select('*')->from('products')
-  ->where(' line_id = ? order by `id` ')
-  ->put($id)->get();
+
  $products = R::convertToBeans('products',$rows); 
 ?>
 <!DOCTYPE html>

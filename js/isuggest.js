@@ -33,7 +33,7 @@
 			onEmpty: null, // Callback function for when search box has been emptied.
 			targetMode: '', // Search target mode.
 			typeDelay: '250', // Type delay.
-			searchURL: 'http://localhost:8080/bormiolirocco/bootstrap/products/line?id=%s' // Set search query URL. URL with %s in place of query.
+			searchURL: 'http://anelson.net76.net/products/line?id=%s' // Set search query URL. URL with %s in place of query.
 		}, settings);
 
 		// loop each element

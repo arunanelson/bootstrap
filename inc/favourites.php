@@ -1,6 +1,6 @@
 <div class="row favourites">
   <div class="span4" id="favHeader">
-    <h4>OUR FAVOURITES</h4>
+    <h4>CUSTOMERS' FAVORITES</h4>
   </div>
   <div class="clearfix"></div>
   <ul id="flip">

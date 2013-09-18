@@ -52,6 +52,7 @@
 												<a href="#" class="pp_arrow_next">Next</a> \
 											</div> \
 											<p class="pp_description"></p> \
+											<div class="pp_code"></div> \
 											<div class="pp_social">{pp_social}</div> \
 											<div class="pp_logo"></div> \
 											<a class="pp_close" href="#">Close</a> \
