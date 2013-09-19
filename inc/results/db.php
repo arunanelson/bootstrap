@@ -1,8 +1,8 @@
 <?php
 // MySQL Connection Informations
-$mysql_host = 'localhost';
-$mysql_username = 'root';
-$mysql_password = 'admin';
+$mysql_host = 'mysql5.controldns.co.uk';
+$mysql_username = 'arunanelson';
+$mysql_password = 'nelson1';
 $mysql_database = 'bormiolirocco';
 
 

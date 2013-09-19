@@ -28,7 +28,7 @@ if(!empty($results)) {
 	echo "<ul>";
 	for($i=0;$i<count($results);$i++){
 		$url = @str_ireplace("%s", ($ids[$i]."#/".$results[$i]."/0/"), $_GET['url']);
-		echo "<li><img src='http://anelson.net76.net/img/catalog/".strtolower($pics[$i]).".png'/><a href='".$url."' target='".$target."'>".str_ireplace($q, $q."<b>", $results[$i])."</b></a></li>";
+		echo "<li><img src='http://www.bormioliroccousa.com/img/catalog/".strtolower($pics[$i]).".png'/><a href='".$url."' target='".$target."'>".str_ireplace($q, $q."<b>", $results[$i])."</b></a></li>";
 	}
 	echo "</ul>";
 }

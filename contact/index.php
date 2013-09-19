@@ -53,8 +53,8 @@ $pageTitle = "Contact Us";
               New York<br>
               NY, 10010</div>
             <div class="m5t">Tel: (1) 212 719 0606</div>
-            <div class="m5t">Like us on <a class="red" href="#">Facebook</a><br>
-              Follow us on <a class="red" href="#">Twitter</a></div>
+            <div class="m5t">Like us on <a class="red" href="http://facebook.com/BormioliRoccoUSA" target="_blank">Facebook</a><br>
+              Follow us on <a class="red" href="http://twitter.com/BormioliRoccoUS" target="_blank">Twitter</a></div>
           </div>
           <div class="article_container">
             <form id='contactus' action='<?php echo $formproc->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>

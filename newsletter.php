@@ -7,7 +7,7 @@
 
         mail($to, $subject, $body, $headers);
 
-        header("Location: http://anelson.net76.net/contact/thank-you/#/".$_GET['email']);
+        header("Location: http://www.bormioliroccousa.com/contact/thank-you/#/".$_GET['email']);
 		die();
 
 ?>

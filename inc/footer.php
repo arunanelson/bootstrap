@@ -37,9 +37,9 @@
         <a href="<?php echo BASE_URL; ?>contact">Contact</a><br />
         <div class="clearfix"></div>
         <div data-tooltip class="faceBookWhite" data-url="http://facebook.com/BormioliRoccoUSA"></div>
-        <div data-tooltip class="pInterestWhite2" data-url="http://www.pinterest.com/bormiolorocco"></div>
+        <div data-tooltip class="pInterestWhite2" data-url="http://www.pinterest.com/bormioliroccoUS"></div>
         <div data-tooltip class="twitterWhite" data-url="http://twitter.com/BormioliRoccoUS"></div>
-        <div data-tooltip data-url="http://instagram.com/BormioliRoccoUS" class="instaGramWhite"></div>
+        <div data-tooltip class="instaGramWhite" data-url="http://instagram.com/bormiolirocco_northamerica"></div>
       </div>
     </div>
     <div class="clearfix"></div>

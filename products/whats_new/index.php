@@ -1,11 +1,18 @@
 <?php require_once("../../inc/domainModel.php");?>
 <?php
+ob_start(); 
  $pageTitle = "What&lsquo;s New?";
  	
  $rows = R::$f->begin()->select('*')->from('product_lines')
   ->where(' is_new = ?  order by `order`')
   ->put(1)->get();
  $product_lines = R::convertToBeans('product_lines',$rows); 
+       if(count($product_lines) == 1 ){
+			 flush(); // Flush the buffer
+             ob_flush(); 
+			 header("Location: ".BASE_URL."products/line/?id=".reset($product_lines)->id); 
+			 die;			 
+	  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,9 +30,6 @@
           <?php foreach($product_lines as $product_line): ?>
           <?php $products = $product_line->getProducts(); $product = reset($products); ?>
           <div class="fleft product <?php echo $product_line->colour; ?>">
-            <?php if(count($product_lines) == 1 ): ?>
-            <?php header("Location: ".BASE_URL."products/line/?id=".$product_line->id); ?>
-            <?php endif; ?>
             <?php if(count($products) == 1 ): ?>
             <?php include "../../inc/product.php"; ?>
             <?php else: ?>

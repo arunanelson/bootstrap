@@ -1,6 +1,4 @@
 <?php require_once("../inc/domainModel.php");?>
-<!DOCTYPE html>
-<html lang="en">
 <?php
  $group = $_GET['group'];
  $cat = 0;
@@ -19,9 +17,16 @@
   ->and(' prod_cat_id = ?  order by `name` asc')
   ->put($group)->put($cat)->get();
  $product_lines = R::convertToBeans('product_lines',$rows); 
-
+      if(count($product_lines) == 1 ){
+			 flush(); // Flush the buffer
+             ob_flush(); 
+			 header("Location: ".BASE_URL."products/line/?id=".reset($product_lines)->id); 
+			 die;			 
+	  }
  $index = 0;
 ?>
+<!DOCTYPE html>
+<html lang="en">
 <?php require_once("../inc/header.php");?>
 <body>
 <div class="container outercontainer shadow">
@@ -36,9 +41,6 @@
           <?php foreach($product_lines as $product_line): ?>
           <div class="fleft product <?php echo $product_line->colour; ?>">
             <?php $products = $product_line->getProducts(); $toFind = $product_line->getStarProduct(); $product = $toFind == NULL ? reset($products) : reset($toFind); ?>
-            <?php if(count($product_lines) == 1 ): ?>
-            <?php header("Location: ".BASE_URL."products/line/?id=".$product_line->id); ?>
-            <?php endif; ?>
             <?php if(count($products) == 1 ): ?>
             <?php include "../inc/product.php"; ?>
             <?php else: ?>

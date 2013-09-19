@@ -39,9 +39,9 @@
       <div id="searchFrm" class="searchbox" onclick="$(this).find('input').focus();">
         <div id="share">
           <div data-tooltip id="faceBook" data-url="http://facebook.com/BormioliRoccoUSA"></div>
-          <div data-tooltip id="pInterest" data-url="http://www.pinterest.com/bormiolorocco"></div>
+          <div data-tooltip id="pInterest" data-url="http://www.pinterest.com/bormioliroccoUS"></div>
           <div data-tooltip id="twitter" data-url="http://twitter.com/BormioliRoccoUS"></div>
-          <div data-tooltip id="instaGram" data-url="http://instagram.com/BormioliRoccoUS"></div>
+          <div data-tooltip id="instaGram" data-url="http://instagram.com/bormiolirocco_northamerica"></div>
         </div>
         <div> <a></a> <img src="<?php echo BASE_URL; ?>img/preloader.gif" border=0 id="ipreloader" />
           <form class="navbar-form pull-right">
